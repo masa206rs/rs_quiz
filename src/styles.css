@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #e74c3c;
+    --primary-dark: #c0392b;
+    --secondary-color: #2c3e50;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --border-color: #ddd;
+    --success-color: #27ae60;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --focus-shadow: rgba(231, 76, 60, 0.3);
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* プレイヤー名入力セクション */
+#player-section input {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.action-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.action-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.action-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.action-button:focus {
+    box-shadow: 0 0 0 3px var(--focus-shadow);
+}
+
+/* クイズセクション */
+#choices-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.choice-btn {
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    text-align: left;
+    transition: all 0.3s;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.choice-btn:hover:not(:disabled) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.choice-btn.correct {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: white;
+}
+
+.choice-btn.incorrect {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.choice-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#score-display {
+    margin-top: 1.5rem;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* タイマー */
+#timer-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    height: 6px;
+}
+
+#timer-bar {
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width linear;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+/* ランキングボード */
+#ranking-list {
+    list-style: none;
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ranking-item:last-child {
+    border-bottom: none;
+}
+
+.rank {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+    }
+}
