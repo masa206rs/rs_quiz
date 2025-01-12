@@ -1,4 +1,4 @@
-import { questions } from '/src/questions.js';
+import { questions } from './questions.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
