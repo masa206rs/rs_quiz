@@ -246,12 +246,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // シェアボタンの更新
     function updateShareButtons() {
-      const shareText = `Mazda Roadsterクイズで${score}点獲得しました！ #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ`;
+      const shareTextX = `Mazda Roadsterクイズで${score}点獲得しました！(20点満点) #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ`;
+      const shareText = `Mazda Roadsterクイズで${score}点獲得しました！(20点満点)`;
       const url = 'https://masa206rs.github.io/rs_quiz/';
       
       // Twitter
       const twitterShare = document.getElementById('twitter-share-result');
-      twitterShare.href = `https://twitter.com/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`;
+      twitterShare.href = `https://twitter.com/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareTextX)}`;
       
       // Facebook
       const facebookShare = document.getElementById('facebook-share-result');
