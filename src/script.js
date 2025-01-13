@@ -78,6 +78,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         correctButton.classList.add("correct");
       }
 
+      // 正誤判定（バツ）を表示
+      const judgmentElement = document.getElementById("judgment");
+      judgmentElement.className = "judgment incorrect";
+      judgmentElement.textContent = "❌";
+
       // 説明を表示
       const explanation = document.createElement("p");
       explanation.textContent = language === "ja" ? 
@@ -103,6 +108,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       score = 0;
       currentScoreDisplay.textContent = score;
       playerSection.classList.add("hidden");
+      document.querySelector('.description').classList.add("hidden");
       quizSection.classList.remove("hidden");
       loadQuestion();
     }
@@ -117,10 +123,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       // 選択肢コンテナをクリア
       choicesContainer.innerHTML = "";
 
-      // タイマーを選択肢の前に追加
+
+
+      // タイマーを追加
       const timerElement = createTimer();
       choicesContainer.appendChild(timerElement);
 
+      // 正誤判定表示用の要素を追加
+      const judgmentElement = document.createElement("div");
+      judgmentElement.id = "judgment";
+      judgmentElement.className = "judgment";
+      choicesContainer.appendChild(judgmentElement);
+      
+      // 選択肢を追加
       const options = language === "ja" ? questionData.options : questionData.optionsEn;
       options.forEach((option, index) => {
         const button = document.createElement("button");
@@ -143,16 +158,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       const questionData = questions[currentQuestionIndex];
       const correctIndex = questionData.correct;
-      const buttons = Array.from(choicesContainer.children);
+      const buttons = Array.from(document.querySelectorAll('.choice-btn'));
 
       buttons.forEach((button) => {
-        if (button.classList.contains("choice-btn")) {
-          button.disabled = true;
-        }
+        button.disabled = true;
       });
 
       const correctButton = buttons.find(button => 
-        button.classList.contains("choice-btn") && 
         button.textContent === (language === "ja" ? 
           questionData.options[correctIndex] : 
           questionData.optionsEn[correctIndex])
@@ -163,7 +175,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
 
       const selectedButton = buttons.find(button => 
-        button.classList.contains("choice-btn") && 
         button.textContent === (language === "ja" ? 
           questionData.options[selectedIndex] : 
           questionData.optionsEn[selectedIndex])
@@ -173,9 +184,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         selectedButton.classList.add("incorrect");
       }
 
+      // 正誤判定を表示
+      const judgmentElement = document.getElementById("judgment");
       if (selectedIndex === correctIndex) {
         score++;
         currentScoreDisplay.textContent = score;
+        judgmentElement.className = "judgment correct";
+        judgmentElement.textContent = "⭕";
+      } else {
+        judgmentElement.className = "judgment incorrect";
+        judgmentElement.textContent = "❌";
       }
 
       // 説明を表示
@@ -199,6 +217,31 @@ document.addEventListener("DOMContentLoaded", async () => {
       quizSection.classList.add("hidden");
       resultSection.classList.remove("hidden");
       finalScoreDisplay.textContent = score;
+      updateShareButtons();
+    }
+
+    // シェアボタンの更新
+    function updateShareButtons() {
+      const shareText = `Mazda Roadsterクイズで${score}点獲得しました！`;
+      const url = 'https://yourusername.github.io/rs_quiz/';
+      
+      // Twitter
+      const twitterShare = document.getElementById('twitter-share-result');
+      twitterShare.href = `https://twitter.com/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`;
+      
+      // Facebook
+      const facebookShare = document.getElementById('facebook-share-result');
+      facebookShare.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+      
+      // LINE
+      const lineShare = document.getElementById('line-share-result');
+      lineShare.href = `https://line.me/R/msg/text/?${encodeURIComponent(shareText)}%0a${encodeURIComponent(url)}`;
+      
+      // 新しいウィンドウで開く設定
+      [twitterShare, facebookShare, lineShare].forEach(button => {
+        button.setAttribute('target', '_blank');
+        button.setAttribute('rel', 'noopener noreferrer');
+      });
     }
 
     // イベントリスナーの設定
@@ -214,6 +257,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     restartButton.addEventListener("click", () => {
       resultSection.classList.add("hidden");
       playerSection.classList.remove("hidden");
+      document.querySelector('.description').classList.remove("hidden");
       playerNameInput.value = "";
     });
 

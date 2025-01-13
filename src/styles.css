@@ -112,10 +112,12 @@ h2 {
     cursor: pointer;
 }
 
+/* 選択肢のマウスホバーをやめる
 .choice-btn:hover:not(:disabled) {
     background-color: var(--primary-color);
     color: white;
 }
+*/
 
 .choice-btn.correct {
     background-color: var(--success-color);
@@ -141,6 +143,35 @@ h2 {
     font-weight: bold;
 }
 
+/* 正誤表示 */
+#judgment {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#judgment.correct {
+    color: #27ae60;
+}
+
+#judgment.incorrect {
+    color: #e74c3c;
+}
+
+/* 正誤表示のアニメーション */
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#judgment.correct,
+#judgment.incorrect {
+    animation: pop 0.3s ease-out forwards;
+}
+
 /* タイマー */
 #timer-container {
     width: 100%;
@@ -157,6 +188,91 @@ h2 {
     transition: width linear;
     border-radius: 4px;
     box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+/* サイト説明 */
+.description p {
+    margin-bottom: 0.8rem;
+    line-height: 1.8;
+}
+
+.description p:last-child {
+    margin-bottom: 0;
+}
+
+/* アクセスカウンター */
+.counter {
+    text-align: center;
+}
+
+.counter-text {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+#access-counter {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.counter-placeholder {
+    letter-spacing: 2px;
+}
+
+/* SNSシェアボタン */
+.share-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-text {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.share-button:hover {
+    transform: translateY(-2px);
+}
+
+.share-button.twitter {
+    background-color: #1DA1F2;
+}
+
+.share-button.facebook {
+    background-color: #4267B2;
+}
+
+.share-button.line {
+    background-color: #00B900;
+}
+
+.result-share {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
 }
 
 @media (max-width: 600px) {
