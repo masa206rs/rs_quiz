@@ -1,5 +1,4 @@
 export const questions = [
-  [
     {
       "question": "初代ロードスター (NA) の開発コードネームは何？",
       "questionEn": "What was the development code name for the first generation Roadster (NA)?",
@@ -640,5 +639,4 @@ export const questions = [
       "explanationEn": "A retractable hardtop model was added to the fourth generation Roadster (ND) as the \"Roadster RF (Retractable Fastback)\". [13]",
       "category": "ND"
     }
-  ] 
 ];
