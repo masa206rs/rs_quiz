@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const resultSection = document.getElementById("result-section");
     const startButton = document.getElementById("start-button");
     const restartButton = document.getElementById("restart-button");
-    const playerNameInput = document.getElementById("player-name");
     const questionText = document.getElementById("question-text");
     const choicesContainer = document.getElementById("choices-container");
     const currentScoreDisplay = document.getElementById("current-score");
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ゲーム状態
     let currentQuestionIndex = 0;
     let score = 0;
-    let playerName = "";
     let timeoutId = null;
     const TIMEOUT_DURATION = 10000; // 10秒
     const language = navigator.language.startsWith("ja") ? "ja" : "en";
@@ -276,11 +274,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     // イベントリスナーの設定
     const handleStart = (e) => {
       e.preventDefault();
-      playerName = playerNameInput.value.trim();
-      if (!playerName) {
-        alert("プレイヤー名を入力してください！");
-        return;
-      }
       startQuiz();
     };
 
@@ -294,7 +287,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       description.classList.remove("hidden");
       description.style.display = 'block';
       playerSection.style.display = 'block';
-      playerNameInput.value = "";
+      document.querySelector('h1').style.display = 'block';
     };
 
     restartButton.addEventListener("click", handleRestart);
