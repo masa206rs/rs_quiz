@@ -62,10 +62,13 @@ h2 {
 
 /* ボタンセンタリング */
 .button-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin: 2rem 0;
+}
+
+.button-center .action-button {
+    display: inline-block;
+    min-width: 200px;
 }
 
 .action-button {
@@ -261,8 +264,8 @@ h2 {
     transform: translateY(-2px);
 }
 
-.share-button.twitter {
-    background-color: #1DA1F2;
+.share-button.x-twitter {
+    background-color: #000000;
 }
 
 .share-button.facebook {

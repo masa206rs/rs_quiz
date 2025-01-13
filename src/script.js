@@ -249,8 +249,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // シェアボタンの更新
     function updateShareButtons() {
-      const shareText = `Mazda Roadsterクイズで${score}点獲得しました！`;
-      const url = 'https://yourusername.github.io/rs_quiz/';
+      const shareText = `Mazda Roadsterクイズで${score}点獲得しました！ #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ`;
+      const url = 'https://masa206rs.github.io/rs_quiz/';
       
       // Twitter
       const twitterShare = document.getElementById('twitter-share-result');
@@ -272,26 +272,62 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // イベントリスナーの設定
-    const handleStart = (e) => {
-      e.preventDefault();
-      startQuiz();
-    };
+    let touchStartTime = 0;
+    
+    startButton.addEventListener("touchstart", (e) => {
+      touchStartTime = Date.now();
+    }, { passive: true });
 
-    startButton.addEventListener("click", handleStart);
-    startButton.addEventListener("touchend", handleStart);
+    startButton.addEventListener("touchend", (e) => {
+      // 300ms以内のタップのみを処理
+      if (Date.now() - touchStartTime < 300) {
+        e.preventDefault();
+        startQuiz();
+      }
+    });
 
-    const handleRestart = (e) => {
-      e.preventDefault();
-      resultSection.classList.add("hidden");
-      playerSection.classList.remove("hidden");
-      description.classList.remove("hidden");
-      description.style.display = 'block';
-      playerSection.style.display = 'block';
-      document.querySelector('h1').style.display = 'block';
-    };
+    // クリックイベントはデスクトップ用に残す
+    startButton.addEventListener("click", (e) => {
+      // タッチデバイスでない場合のみ処理
+      if (!('ontouchstart' in window)) {
+        e.preventDefault();
+        startQuiz();
+      }
+    });
 
-    restartButton.addEventListener("click", handleRestart);
-    restartButton.addEventListener("touchend", handleRestart);
+    // リスタートボタンのイベントリスナー
+    let restartTouchStartTime = 0;
+    
+    restartButton.addEventListener("touchstart", (e) => {
+      restartTouchStartTime = Date.now();
+    }, { passive: true });
+
+    restartButton.addEventListener("touchend", (e) => {
+      // 300ms以内のタップのみを処理
+      if (Date.now() - restartTouchStartTime < 300) {
+        e.preventDefault();
+        resultSection.classList.add("hidden");
+        playerSection.classList.remove("hidden");
+        description.classList.remove("hidden");
+        description.style.display = 'block';
+        playerSection.style.display = 'block';
+        document.querySelector('h1').style.display = 'block';
+      }
+    });
+
+    // クリックイベントはデスクトップ用に残す
+    restartButton.addEventListener("click", (e) => {
+      // タッチデバイスでない場合のみ処理
+      if (!('ontouchstart' in window)) {
+        e.preventDefault();
+        resultSection.classList.add("hidden");
+        playerSection.classList.remove("hidden");
+        description.classList.remove("hidden");
+        description.style.display = 'block';
+        playerSection.style.display = 'block';
+        document.querySelector('h1').style.display = 'block';
+      }
+    });
 
   } catch (error) {
     console.error("アプリケーション初期化エラー:", error);
