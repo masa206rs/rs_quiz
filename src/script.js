@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const choicesContainer = document.getElementById("choices-container");
     const currentScoreDisplay = document.getElementById("current-score");
     const finalScoreDisplay = document.getElementById("final-score");
+    const description = document.querySelector('.description');
+    
     // ゲーム状態
     let currentQuestionIndex = 0;
     let score = 0;
@@ -64,11 +66,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // タイムアウト処理
     function handleTimeout() {
-      const buttons = Array.from(choicesContainer.children);
+      const buttons = Array.from(choicesContainer.querySelectorAll('.choice-btn'));
       buttons.forEach(button => {
-        if (button.classList.contains("choice-btn")) {
-          button.disabled = true;
-        }
+        button.disabled = true;
       });
 
       // 正解を表示
@@ -80,8 +80,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // 正誤判定（バツ）を表示
       const judgmentElement = document.getElementById("judgment");
-      judgmentElement.className = "judgment incorrect";
-      judgmentElement.textContent = "❌";
+      if (judgmentElement) {
+        judgmentElement.className = "judgment incorrect";
+        judgmentElement.textContent = "❌";
+      }
 
       // 説明を表示
       const explanation = document.createElement("p");
@@ -107,10 +109,20 @@ document.addEventListener("DOMContentLoaded", async () => {
       currentQuestionIndex = 0;
       score = 0;
       currentScoreDisplay.textContent = score;
-      playerSection.classList.add("hidden");
-      document.querySelector('.description').classList.add("hidden");
-      quizSection.classList.remove("hidden");
-      loadQuestion();
+      
+      // DOMの更新を一括で行う
+      requestAnimationFrame(() => {
+        description.style.display = 'none';
+        playerSection.style.display = 'none';
+        quizSection.style.display = 'block';
+        
+        // クラスの更新
+        description.classList.add("hidden");
+        playerSection.classList.add("hidden");
+        quizSection.classList.remove("hidden");
+        
+        loadQuestion();
+      });
     }
 
     // 問題をロード
@@ -120,10 +132,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       // 質問文を更新
       questionText.textContent = language === "ja" ? questionData.question : questionData.questionEn;
 
-      // 選択肢コンテナをクリア
-      choicesContainer.innerHTML = "";
-
-
+      // 選択肢コンテナを完全にクリア
+      while (choicesContainer.firstChild) {
+        choicesContainer.removeChild(choicesContainer.firstChild);
+      }
 
       // タイマーを追加
       const timerElement = createTimer();
@@ -141,7 +153,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         const button = document.createElement("button");
         button.classList.add("choice-btn");
         button.textContent = option;
-        button.addEventListener("click", () => handleAnswer(index), { once: true });
+        
+        // クリックとタッチの両方に対応
+        const handleChoice = (e) => {
+          e.preventDefault();
+          handleAnswer(index);
+          button.removeEventListener('click', handleChoice);
+          button.removeEventListener('touchend', handleChoice);
+        };
+        
+        button.addEventListener('click', handleChoice);
+        button.addEventListener('touchend', handleChoice);
+        
         choicesContainer.appendChild(button);
       });
 
@@ -158,42 +181,44 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       const questionData = questions[currentQuestionIndex];
       const correctIndex = questionData.correct;
-      const buttons = Array.from(document.querySelectorAll('.choice-btn'));
+      const buttons = Array.from(choicesContainer.querySelectorAll('.choice-btn'));
 
+      // すべてのボタンを無効化
       buttons.forEach((button) => {
         button.disabled = true;
+        button.style.pointerEvents = 'none';
       });
 
-      const correctButton = buttons.find(button => 
-        button.textContent === (language === "ja" ? 
-          questionData.options[correctIndex] : 
-          questionData.optionsEn[correctIndex])
-      );
-      
+      // 正解ボタンを特定
+      const correctButton = buttons[correctIndex];
       if (correctButton) {
         correctButton.classList.add("correct");
       }
 
-      const selectedButton = buttons.find(button => 
-        button.textContent === (language === "ja" ? 
-          questionData.options[selectedIndex] : 
-          questionData.optionsEn[selectedIndex])
-      );
-
-      if (selectedButton && selectedIndex !== correctIndex) {
-        selectedButton.classList.add("incorrect");
+      // 選択されたボタンが不正解の場合、赤くマーク
+      if (selectedIndex !== correctIndex) {
+        const selectedButton = buttons[selectedIndex];
+        if (selectedButton) {
+          selectedButton.classList.add("incorrect");
+        }
       }
 
       // 正誤判定を表示
       const judgmentElement = document.getElementById("judgment");
-      if (selectedIndex === correctIndex) {
-        score++;
-        currentScoreDisplay.textContent = score;
-        judgmentElement.className = "judgment correct";
-        judgmentElement.textContent = "⭕";
-      } else {
-        judgmentElement.className = "judgment incorrect";
-        judgmentElement.textContent = "❌";
+      if (judgmentElement) {
+        if (selectedIndex === correctIndex) {
+          score++;
+          currentScoreDisplay.textContent = score;
+          judgmentElement.className = "judgment correct";
+          judgmentElement.textContent = "⭕";
+        } else {
+          judgmentElement.className = "judgment incorrect";
+          judgmentElement.textContent = "❌";
+        }
+        // 判定を確実に表示するため、強制的に再描画
+        judgmentElement.style.display = 'none';
+        judgmentElement.offsetHeight;
+        judgmentElement.style.display = 'block';
       }
 
       // 説明を表示
@@ -202,6 +227,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       explanation.style.marginTop = "1rem";
       choicesContainer.appendChild(explanation);
 
+      // 2秒後に次の問題へ
       setTimeout(() => {
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
@@ -245,21 +271,31 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // イベントリスナーの設定
-    startButton.addEventListener("click", () => {
+    const handleStart = (e) => {
+      e.preventDefault();
       playerName = playerNameInput.value.trim();
       if (!playerName) {
         alert("プレイヤー名を入力してください！");
         return;
       }
       startQuiz();
-    });
+    };
 
-    restartButton.addEventListener("click", () => {
+    startButton.addEventListener("click", handleStart);
+    startButton.addEventListener("touchend", handleStart);
+
+    const handleRestart = (e) => {
+      e.preventDefault();
       resultSection.classList.add("hidden");
       playerSection.classList.remove("hidden");
-      document.querySelector('.description').classList.remove("hidden");
+      description.classList.remove("hidden");
+      description.style.display = 'block';
+      playerSection.style.display = 'block';
       playerNameInput.value = "";
-    });
+    };
+
+    restartButton.addEventListener("click", handleRestart);
+    restartButton.addEventListener("touchend", handleRestart);
 
   } catch (error) {
     console.error("アプリケーション初期化エラー:", error);
