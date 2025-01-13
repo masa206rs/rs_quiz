@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const choicesContainer = document.getElementById("choices-container");
     const currentScoreDisplay = document.getElementById("current-score");
     const finalScoreDisplay = document.getElementById("final-score");
-    const rankingList = document.getElementById("ranking-list");
-
     // ゲーム状態
     let currentQuestionIndex = 0;
     let score = 0;
@@ -22,11 +20,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     let timeoutId = null;
     const TIMEOUT_DURATION = 10000; // 10秒
     const language = navigator.language.startsWith("ja") ? "ja" : "en";
-
-    // ランキング機能は一時的に無効化
-    async function displayRanking() {
-      rankingList.innerHTML = "<p>ランキング機能は現在利用できません。</p>";
-    }
 
     // タイマーの作成と表示
     function createTimer() {
@@ -224,8 +217,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       playerNameInput.value = "";
     });
 
-    // 初期ランキング表示
-    await displayRanking();
   } catch (error) {
     console.error("アプリケーション初期化エラー:", error);
     alert("アプリケーションの初期化に失敗しました。ページを更新してください。");

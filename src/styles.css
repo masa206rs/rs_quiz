@@ -159,28 +159,6 @@ h2 {
     box-shadow: 0 1px 2px var(--shadow-color);
 }
 
-/* ランキングボード */
-#ranking-list {
-    list-style: none;
-}
-
-.ranking-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.8rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.ranking-item:last-child {
-    border-bottom: none;
-}
-
-.rank {
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-right: 1rem;
-}
-
 @media (max-width: 600px) {
     .container {
         margin: 1rem auto;
