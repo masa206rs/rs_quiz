@@ -112,6 +112,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       
       // DOMの更新を一括で行う
       requestAnimationFrame(() => {
+        // サイトタイトルを非表示
+        document.querySelector('h1').style.display = 'none';
+        
         description.style.display = 'none';
         playerSection.style.display = 'none';
         quizSection.style.display = 'block';
