@@ -19,8 +19,13 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    background-color: var(--background-color);
     color: var(--text-color);
+    background-image: url('../img/bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .container {
@@ -31,9 +36,11 @@ body {
 
 h1 {
     text-align: center;
-    color: #1a1a1a;
+    color: white;
     margin-bottom: 2rem;
     font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }
 
 h2 {
@@ -49,11 +56,12 @@ h2 {
 }
 
 .section {
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px var(--shadow-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+    backdrop-filter: blur(5px);
 }
 
 .hidden {
