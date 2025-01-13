@@ -26,7 +26,7 @@ export const questions = [
       "東京都現代美術館",
       "国立西洋美術館",
       "ニューヨーク近代美術館",
-      "大 British Museum"
+      "大英博物館 British Museum"
     ],
     "optionsEn": [
       "The Museum of Modern Art, Tokyo",
@@ -75,8 +75,8 @@ export const questions = [
       "Nori Tokuda"
     ],
     "correct": 2,
-    "explanation": "初代ロードスターの開発主査は、当初は平井敏彦が務め、後に貴島孝雄が引き継ぎました。[1]",
-    "explanationEn": "The initial chief development engineer for the first generation Roadster was Toshihiko Hirai, and later Takao Kijima took over. [1]",
+    "explanation": "初代ロードスターの開発主査は、当初は平井敏彦が務め、後に貴島孝雄が引き継ぎました。",
+    "explanationEn": "The initial chief development engineer for the first generation Roadster was Toshihiko Hirai, and later Takao Kijima took over. ",
     "category": "NA"
   },
   {
@@ -95,8 +95,8 @@ export const questions = [
       "To reduce air resistance"
     ],
     "correct": 2,
-    "explanation": "初代ロードスターでは、幌を収納した際に幌がベルトラインより上側に出ないように、収納スペース確保を目的として、チーフデザイナーの田中氏の要望でベルトラインより下側に幌を収納する構造になりました。これは、幌を収納した状態でも美しいデザインを維持するためでした。[2]",
-    "explanationEn": "The first generation Roadster was designed to store the soft top below the beltline at the request of chief designer Mr. Tanaka to prevent the soft top from protruding above the beltline when stored. This was to maintain a beautiful design even when the soft top was stored. [2]",
+    "explanation": "初代ロードスターでは、幌を収納した際に幌がベルトラインより上側に出ないように、収納スペース確保を目的として、チーフデザイナーの田中氏の要望でベルトラインより下側に幌を収納する構造になりました。これは、幌を収納した状態でも美しいデザインを維持するためでした。",
+    "explanationEn": "The first generation Roadster was designed to store the soft top below the beltline at the request of chief designer Mr. Tanaka to prevent the soft top from protruding above the beltline when stored. This was to maintain a beautiful design even when the soft top was stored. ",
     "category": "NA"
   },
   {
@@ -115,8 +115,8 @@ export const questions = [
       "January 1999"
     ],
     "correct": 1,
-    "explanation": "初代ロードスター (NA) の生産は1998年1月に終了しました。[3]",
-    "explanationEn": "Production of the first-generation Roadster (NA) ended in January 1998. [3]",
+    "explanation": "初代ロードスター (NA) の生産は1998年1月に終了しました。",
+    "explanationEn": "Production of the first-generation Roadster (NA) ended in January 1998. ",
     "category": "NA"
   },
   {
@@ -135,8 +135,8 @@ export const questions = [
       "64bit"
     ],
     "correct": 1,
-    "explanation": "1995年8月のマイナーチェンジでは、ECUを8bitから16bitに変更することで高回転域での燃焼を最適化し、トルクを向上させました。[4]",
-    "explanationEn": "In the August 1995 minor change, the ECU was changed from 8bit to 16bit to optimize combustion in the high rpm range and improve torque. [4]",
+    "explanation": "1995年8月のマイナーチェンジでは、ECUを8bitから16bitに変更することで高回転域での燃焼を最適化し、トルクを向上させました。",
+    "explanationEn": "In the August 1995 minor change, the ECU was changed from 8bit to 16bit to optimize combustion in the high rpm range and improve torque. ",
     "category": "NA"
   },
   {
@@ -155,8 +155,8 @@ export const questions = [
       "Cost reduction strategy"
     ],
     "correct": 1,
-    "explanation": "初代ロードスターの開発では、グラム単位で無駄を省き、重量増を最小限に抑える取り組みを「グラム作戦」と呼んでいました。[5]",
-    "explanationEn": "In the development of the first-generation Roadster, the initiative to eliminate waste in grams and minimize weight gain was called the \"Gram Strategy\". [5]",
+    "explanation": "初代ロードスターの開発では、グラム単位で無駄を省き、重量増を最小限に抑える取り組みを「グラム作戦」と呼んでいました。",
+    "explanationEn": "In the development of the first-generation Roadster, the initiative to eliminate waste in grams and minimize weight gain was called the \"Gram Strategy\". ",
     "category": "NA"
   },
   {
@@ -175,8 +175,8 @@ export const questions = [
       "Crankshaft"
     ],
     "correct": 2,
-    "explanation": "初代ロードスターの開発では、エンジンレイアウトが縦置きに変更された際に、オイルミスト分離容積確保のため、カムカバーが量産出図直前になって専用部品化が決定されました。[2]",
-    "explanationEn": "In the development of the first generation Roadster, when the engine layout was changed to a vertical arrangement, it was decided to make the cam cover a dedicated part immediately before the mass production drawing in order to secure oil mist separation volume. [2]",
+    "explanation": "初代ロードスターの開発では、エンジンレイアウトが縦置きに変更された際に、オイルミスト分離容積確保のため、カムカバーが量産出図直前になって専用部品化が決定されました。",
+    "explanationEn": "In the development of the first generation Roadster, when the engine layout was changed to a vertical arrangement, it was decided to make the cam cover a dedicated part immediately before the mass production drawing in order to secure oil mist separation volume. ",
     "category": "NA"
   },
   {
@@ -195,8 +195,8 @@ export const questions = [
       "Titan"
     ],
     "correct": 1,
-    "explanation": "初代ロードスターの開発において、設計コンセプトを具体化するために、FA4型ファミリアのコンポーネンツが使用されました。[1]",
-    "explanationEn": "In the development of the first generation Roadster, components from the FA4 Familia were used to embody the design concept. [1]",
+    "explanation": "初代ロードスターの開発において、設計コンセプトを具体化するために、FA4型ファミリアのコンポーネンツが使用されました。",
+    "explanationEn": "In the development of the first generation Roadster, components from the FA4 Familia were used to embody the design concept. ",
     "category": "NA"
   },
   {
@@ -215,8 +215,8 @@ export const questions = [
       "SolidWorks"
     ],
     "correct": 1,
-    "explanation": "初代ロードスターのレイアウト開発には、当時としては先進的な内製3次元CADソフト「GNC2」が導入されました。[2]",
-    "explanationEn": "The in-house 3D CAD software \"GNC2\", which was considered advanced at the time, was introduced for the layout development of the first-generation Roadster. [2]",
+    "explanation": "初代ロードスターのレイアウト開発には、当時としては先進的な内製3次元CADソフト「GNC2」が導入されました。",
+    "explanationEn": "The in-house 3D CAD software \"GNC2\", which was considered advanced at the time, was introduced for the layout development of the first-generation Roadster. ",
     "category": "NA"
   },
   {
@@ -235,8 +235,8 @@ export const questions = [
       "Storage below the beltline"
     ],
     "correct": 3,
-    "explanation": "初代ロードスターのソフトトップ開発担当者である西口氏は、幌の収納構造において、ベルトラインよりも下側に幌生地の付いた幌骨を収める構造にすることで、収納時のコンパクト化と美しいデザインを実現しました。[2]",
-    "explanationEn": "Mr. Nishiguchi, who was in charge of developing the soft top for the first generation Roadster, achieved compactness during storage and a beautiful design by adopting a structure in which the soft top frame with the soft top fabric attached was stored below the beltline. [2]",
+    "explanation": "初代ロードスターのソフトトップ開発担当者である西口氏は、幌の収納構造において、ベルトラインよりも下側に幌生地の付いた幌骨を収める構造にすることで、収納時のコンパクト化と美しいデザインを実現しました。",
+    "explanationEn": "Mr. Nishiguchi, who was in charge of developing the soft top for the first generation Roadster, achieved compactness during storage and a beautiful design by adopting a structure in which the soft top frame with the soft top fabric attached was stored below the beltline. ",
     "category": "NA"
   },
   {
@@ -255,8 +255,8 @@ export const questions = [
       "Harley-Davidson"
     ],
     "correct": 2,
-    "explanation": "初代ロードスターのエキゾーストマニホールドの設計で、チーフの横倉氏は、自身所有のバイクであるホンダ・CB400FOURを参考にしました。[6]",
-    "explanationEn": "Chief Yokokura referred to his own motorcycle, the Honda CB400FOUR, when designing the exhaust manifold for the first generation Roadster. [6]",
+    "explanation": "初代ロードスターのエキゾーストマニホールドの設計で、チーフの横倉氏は、自身所有のバイクであるホンダ・CB400FOURを参考にしました。",
+    "explanationEn": "Chief Yokokura referred to his own motorcycle, the Honda CB400FOUR, when designing the exhaust manifold for the first generation Roadster. ",
     "category": "NA"
   },
   {
@@ -275,8 +275,8 @@ export const questions = [
       "Trend at the time"
     ],
     "correct": 2,
-    "explanation": "2代目ロードスター (NB) は、軽量化やヨー慣性モーメント低減、対人衝突時に与えるダメージの低減などのため、リトラクタブルヘッドライトを廃止しました。[5]",
-    "explanationEn": "The second generation Roadster (NB) abolished retractable headlights to reduce weight, reduce yaw inertia moment, and reduce damage in the event of a pedestrian collision. [5]",
+    "explanation": "2代目ロードスター (NB) は、軽量化やヨー慣性モーメント低減、対人衝突時に与えるダメージの低減などのため、リトラクタブルヘッドライトを廃止しました。",
+    "explanationEn": "The second generation Roadster (NB) abolished retractable headlights to reduce weight, reduce yaw inertia moment, and reduce damage in the event of a pedestrian collision. ",
     "category": "NB"
   },
   {
@@ -295,8 +295,8 @@ export const questions = [
       "LF-VE"
     ],
     "correct": 2,
-    "explanation": "2代目ロードスター (NB) では、1.6Lエンジンが復活し、NB6C型として販売されました。[7]",
-    "explanationEn": "In the second generation Roadster (NB), the 1.6L engine was revived and sold as the NB6C type. [7]",
+    "explanation": "2代目ロードスター (NB) では、1.6Lエンジンが復活し、NB6C型として販売されました。",
+    "explanationEn": "In the second generation Roadster (NB), the 1.6L engine was revived and sold as the NB6C type. ",
     "category": "NB"
   },
   {
@@ -315,8 +315,8 @@ export const questions = [
       "Koichi Hayashi"
     ],
     "correct": 1,
-    "explanation": "2代目ロードスター (NB) の開発主査は、初代から引き続き貴島孝雄が担当しました。[5]",
-    "explanationEn": "Takao Kijima continued to be the chief development engineer for the second generation Roadster (NB), as he was for the first generation. [5]",
+    "explanation": "2代目ロードスター (NB) の開発主査は、初代から引き続き貴島孝雄が担当しました。",
+    "explanationEn": "Takao Kijima continued to be the chief development engineer for the second generation Roadster (NB), as he was for the first generation. ",
     "category": "NB"
   },
   {
@@ -335,8 +335,8 @@ export const questions = [
       "Addition of a 4WD model"
     ],
     "correct": 1,
-    "explanation": "2代目ロードスター (NB) の2000年のマイナーチェンジでは、フロントマスクとリアコンビネーションランプを中心にデザインが変更されました。[7]",
-    "explanationEn": "The 2000 minor change to the second generation Roadster (NB) focused on design changes to the front mask and rear combination lamps. [7]",
+    "explanation": "2代目ロードスター (NB) の2000年のマイナーチェンジでは、フロントマスクとリアコンビネーションランプを中心にデザインが変更されました。",
+    "explanationEn": "The 2000 minor change to the second generation Roadster (NB) focused on design changes to the front mask and rear combination lamps. ",
     "category": "NB"
   },
   {
@@ -355,8 +355,8 @@ export const questions = [
       "700 units"
     ],
     "correct": 2,
-    "explanation": "2代目ロードスター (NB) の10周年記念車は世界限定7,500台で、日本には500番までの500台がデリバリーされました。[8]",
-    "explanationEn": "The 10th anniversary model of the second generation Roadster (NB) was limited to 7,500 units worldwide, and 500 units up to number 500 were delivered to Japan. [8]",
+    "explanation": "2代目ロードスター (NB) の10周年記念車は世界限定7,500台で、日本には500番までの500台がデリバリーされました。",
+    "explanationEn": "The 10th anniversary model of the second generation Roadster (NB) was limited to 7,500 units worldwide, and 500 units up to number 500 were delivered to Japan. ",
     "category": "NB"
   },
   {
@@ -375,8 +375,8 @@ export const questions = [
       "Rotary engine"
     ],
     "correct": 1,
-    "explanation": "2代目ロードスター (NB) の限定車「マツダスピード ロードスター」には、1.8L RSをベースにマツダスピードのパーツを装着した、よりスポーティな仕様が採用されました。[8]",
-    "explanationEn": "The limited edition \"MazdaSpeed Roadster\" of the second generation Roadster (NB) was based on the 1.8L RS and was equipped with MazdaSpeed parts for a sportier specification. [8]",
+    "explanation": "2代目ロードスター (NB) の限定車「マツダスピード ロードスター」には、1.8L RSをベースにマツダスピードのパーツを装着した、よりスポーティな仕様が採用されました。",
+    "explanationEn": "The limited edition \"MazdaSpeed Roadster\" of the second generation Roadster (NB) was based on the 1.8L RS and was equipped with MazdaSpeed parts for a sportier specification. ",
     "category": "NB"
   },
   {
@@ -395,8 +395,8 @@ export const questions = [
       "500 units"
     ],
     "correct": 1,
-    "explanation": "2代目ロードスター (NB) の限定車「マツダスピード ロードスター」は、200台限定販売されました。[8]",
-    "explanationEn": "The limited edition \"MazdaSpeed Roadster\" of the second generation Roadster (NB) was limited to 200 units. [8]",
+    "explanation": "2代目ロードスター (NB) の限定車「マツダスピード ロードスター」は、200台限定販売されました。",
+    "explanationEn": "The limited edition \"MazdaSpeed Roadster\" of the second generation Roadster (NB) was limited to 200 units. ",
     "category": "NB"
   },
   {
@@ -415,8 +415,8 @@ export const questions = [
       "Custom Roadster"
     ],
     "correct": 0,
-    "explanation": "2代目ロードスター (NB) では、「web-tuned＠Roadster（ウェブチューンドロードスター）」がインターネットカスタマイズ専用車として販売されました。[8]",
-    "explanationEn": "\"web-tuned＠Roadster\" was sold as an Internet customization only vehicle in the second generation Roadster (NB). [8]",
+    "explanation": "2代目ロードスター (NB) では、「web-tuned＠Roadster（ウェブチューンドロードスター）」がインターネットカスタマイズ専用車として販売されました。",
+    "explanationEn": "\"web-tuned＠Roadster\" was sold as an Internet customization only vehicle in the second generation Roadster (NB). ",
     "category": "NB"
   },
   {
@@ -435,8 +435,8 @@ export const questions = [
       "Competition"
     ],
     "correct": 2,
-    "explanation": "2代目ロードスター (NB) では、モータースポーツ入門用ベース車両として「NR-A」が機種追加されました。[8]",
-    "explanationEn": "In the second generation Roadster (NB), \"NR-A\" was added to the model lineup as a base vehicle for entry-level motorsports. [8]",
+    "explanation": "2代目ロードスター (NB) では、モータースポーツ入門用ベース車両として「NR-A」が機種追加されました。",
+    "explanationEn": "In the second generation Roadster (NB), \"NR-A\" was added to the model lineup as a base vehicle for entry-level motorsports. ",
     "category": "NB"
   },
   {
@@ -455,8 +455,8 @@ export const questions = [
       "Nagare"
     ],
     "correct": 0,
-    "explanation": "3代目ロードスター (NC) は、マツダの新しいデザインテーマである「魂動（こどう）-Soul of Motion」を反映したデザインを採用しました。[9]",
-    "explanationEn": "The third-generation Roadster (NC) adopted a design that reflects Mazda's new design theme, \"Kodo -Soul of Motion\". [9]",
+    "explanation": "3代目ロードスター (NC) は、マツダの新しいデザインテーマである「魂動（こどう）-Soul of Motion」を反映したデザインを採用しました。",
+    "explanationEn": "The third-generation Roadster (NC) adopted a design that reflects Mazda's new design theme, \"Kodo -Soul of Motion\". ",
     "category": "NC"
   },
   {
@@ -475,8 +475,8 @@ export const questions = [
       "P5-VP"
     ],
     "correct": 1,
-    "explanation": "3代目ロードスター (NC) では、新開発の2.0L 直列4気筒DOHCエンジンであるLF-VE型が採用されました。[9]",
-    "explanationEn": "The third-generation Roadster (NC) adopted the newly developed 2.0L inline-four DOHC engine, the LF-VE type. [9]",
+    "explanation": "3代目ロードスター (NC) では、新開発の2.0L 直列4気筒DOHCエンジンであるLF-VE型が採用されました。",
+    "explanationEn": "The third-generation Roadster (NC) adopted the newly developed 2.0L inline-four DOHC engine, the LF-VE type. ",
     "category": "NC"
   },
   {
@@ -495,8 +495,8 @@ export const questions = [
       "Masashi Nakayama"
     ],
     "correct": 1,
-    "explanation": "3代目ロードスター (NC) の開発主査は、2代目から引き続き貴島孝雄が担当しました。[9]",
-    "explanationEn": "Takao Kijima continued to be the chief development engineer for the third generation Roadster (NC), as he was for the second generation. [9]",
+    "explanation": "3代目ロードスター (NC) の開発主査は、2代目から引き続き貴島孝雄が担当しました。",
+    "explanationEn": "Takao Kijima continued to be the chief development engineer for the third generation Roadster (NC), as he was for the second generation. ",
     "category": "NC"
   },
   {
@@ -515,8 +515,8 @@ export const questions = [
       "Roadster RF"
     ],
     "correct": 2,
-    "explanation": "3代目ロードスター (NC) では、「ロードスター パワーリトラクタブルハードトップ」として、電動開閉式のハードトップモデルが追加されました。[9]",
-    "explanationEn": "A power-operated retractable hardtop model was added to the third generation Roadster (NC) as the \"Roadster Power Retractable Hardtop\". [9]",
+    "explanation": "3代目ロードスター (NC) では、「ロードスター パワーリトラクタブルハードトップ」として、電動開閉式のハードトップモデルが追加されました。",
+    "explanationEn": "A power-operated retractable hardtop model was added to the third generation Roadster (NC) as the \"Roadster Power Retractable Hardtop\". ",
     "category": "NC"
   },
   {
@@ -535,8 +535,8 @@ export const questions = [
       "Addition of a 4WD model"
     ],
     "correct": 1,
-    "explanation": "3代目ロードスター (NC) の2008年12月のマイナーチェンジでは、フロントグリルにマツダ車特有の五角形グリルが採用されました。[10]",
-    "explanationEn": "In the December 2008 minor change of the third generation Roadster (NC), the Mazda-specific pentagonal grille was adopted for the front grille. [10]",
+    "explanation": "3代目ロードスター (NC) の2008年12月のマイナーチェンジでは、フロントグリルにマツダ車特有の五角形グリルが採用されました。",
+    "explanationEn": "In the December 2008 minor change of the third generation Roadster (NC), the Mazda-specific pentagonal grille was adopted for the front grille. ",
     "category": "NC"
   },
   {
@@ -555,8 +555,8 @@ export const questions = [
       "NR-A"
     ],
     "correct": 2,
-    "explanation": "3代目ロードスター (NC) の限定車「マツダスピードM'z Tune」は、RS (6MT・ソフトトップ) をベースに、専用のチューニングが施されました。[10]",
-    "explanationEn": "The limited edition \"MazdaSpeed M'z Tune\" of the third generation Roadster (NC) was based on the RS (6MT and soft top) and was given special tuning. [10]",
+    "explanation": "3代目ロードスター (NC) の限定車「マツダスピードM'z Tune」は、RS (6MT・ソフトトップ) をベースに、専用のチューニングが施されました。",
+    "explanationEn": "The limited edition \"MazdaSpeed M'z Tune\" of the third generation Roadster (NC) was based on the RS (6MT and soft top) and was given special tuning. ",
     "category": "NC"
   },
   {
@@ -575,8 +575,8 @@ export const questions = [
       "i-DM"
     ],
     "correct": 1,
-    "explanation": "4代目ロードスター (ND) は、「SKYACTIV TECHNOLOGY」とデザインテーマ「魂動（こどう）-Soul of Motion」を全面的に採用した新世代車種の第6弾となります。[11]",
-    "explanationEn": "The fourth-generation Roadster (ND) is the sixth model in a new generation of vehicles that fully adopts \"SKYACTIV TECHNOLOGY\" and the design theme \"Kodo -Soul of Motion\". [11]",
+    "explanation": "4代目ロードスター (ND) は、「SKYACTIV TECHNOLOGY」とデザインテーマ「魂動（こどう）-Soul of Motion」を全面的に採用した新世代車種の第6弾となります。",
+    "explanationEn": "The fourth-generation Roadster (ND) is the sixth model in a new generation of vehicles that fully adopts \"SKYACTIV TECHNOLOGY\" and the design theme \"Kodo -Soul of Motion\". ",
     "category": "ND"
   },
   {
@@ -595,8 +595,8 @@ export const questions = [
       "SKYACTIV-G 2.0"
     ],
     "correct": 2,
-    "explanation": "4代目ロードスター (ND) の日本仕様車には、1.5L SKYACTIV-G 1.5エンジンが搭載されました。[12]",
-    "explanationEn": "The Japanese specification of the fourth generation Roadster (ND) was equipped with the 1.5L SKYACTIV-G 1.5 engine. [12]",
+    "explanation": "4代目ロードスター (ND) の日本仕様車には、1.5L SKYACTIV-G 1.5エンジンが搭載されました。",
+    "explanationEn": "The Japanese specification of the fourth generation Roadster (ND) was equipped with the 1.5L SKYACTIV-G 1.5 engine. ",
     "category": "ND"
   },
   {
@@ -615,8 +615,8 @@ export const questions = [
       "Masashi Nakayama"
     ],
     "correct": 2,
-    "explanation": "4代目ロードスター (ND) の開発主査は、山本修弘が担当しました。[11]",
-    "explanationEn": "Nobuhiro Yamamoto was in charge of development for the fourth generation Roadster (ND). [11]",
+    "explanation": "4代目ロードスター (ND) の開発主査は、山本修弘が担当しました。",
+    "explanationEn": "Nobuhiro Yamamoto was in charge of development for the fourth generation Roadster (ND). ",
     "category": "ND"
   },
   {
@@ -635,8 +635,8 @@ export const questions = [
       "Roadster RF"
     ],
     "correct": 3,
-    "explanation": "4代目ロードスター (ND) では、「ロードスターRF (リトラクタブル ファストバック)」として、リトラクタブルハードトップモデルが追加されました。[13]",
-    "explanationEn": "A retractable hardtop model was added to the fourth generation Roadster (ND) as the \"Roadster RF (Retractable Fastback)\". [13]",
+    "explanation": "4代目ロードスター (ND) では、「ロードスターRF (リトラクタブル ファストバック)」として、リトラクタブルハードトップモデルが追加されました。",
+    "explanationEn": "A retractable hardtop model was added to the fourth generation Roadster (ND) as the \"Roadster RF (Retractable Fastback)\". ",
     "category": "ND"
   }
 ];
