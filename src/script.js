@@ -141,12 +141,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       // タイマーを追加
       const timerElement = createTimer();
       choicesContainer.appendChild(timerElement);
-
-      // 正誤判定表示用の要素を追加
-      const judgmentElement = document.createElement("div");
-      judgmentElement.id = "judgment";
-      judgmentElement.className = "judgment";
-      choicesContainer.appendChild(judgmentElement);
       
       // 選択肢を追加
       const options = language === "ja" ? questionData.options : questionData.optionsEn;
@@ -205,21 +199,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
 
       // 正誤判定を表示
-      const judgmentElement = document.getElementById("judgment");
-      if (judgmentElement) {
-        if (selectedIndex === correctIndex) {
-          score++;
-          currentScoreDisplay.textContent = score;
-          judgmentElement.className = "judgment correct";
-          judgmentElement.textContent = "⭕";
-        } else {
-          judgmentElement.className = "judgment incorrect";
-          judgmentElement.textContent = "❌";
-        }
-        // 判定を確実に表示するため、強制的に再描画
-        judgmentElement.style.display = 'none';
-        judgmentElement.offsetHeight;
-        judgmentElement.style.display = 'block';
+      const judgmentElement = document.createElement("div");
+      judgmentElement.id = "judgment";
+      judgmentElement.className = selectedIndex === correctIndex ? "judgment correct" : "judgment incorrect";
+      judgmentElement.textContent = selectedIndex === correctIndex ? "⭕" : "❌";
+      choicesContainer.appendChild(judgmentElement);
+
+      if (selectedIndex === correctIndex) {
+        score++;
+        currentScoreDisplay.textContent = score;
       }
 
       // 説明を表示
