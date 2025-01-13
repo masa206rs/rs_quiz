@@ -241,10 +241,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // 結果を表示
     function showResults() {
-      quizSection.classList.add("hidden");
-      resultSection.classList.remove("hidden");
-      finalScoreDisplay.textContent = score;
-      updateShareButtons();
+      // DOMの更新を一括で行う
+      requestAnimationFrame(() => {
+        // クイズセクションを非表示
+        quizSection.style.display = 'none';
+        quizSection.classList.add("hidden");
+        
+        // 結果セクションを表示
+        resultSection.style.display = 'block';
+        resultSection.classList.remove("hidden");
+        
+        finalScoreDisplay.textContent = score;
+        updateShareButtons();
+      });
     }
 
     // シェアボタンの更新
