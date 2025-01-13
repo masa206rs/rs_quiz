@@ -18,8 +18,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     let currentQuestionIndex = 0;
     let score = 0;
     let timeoutId = null;
+    let shuffledQuestions = [];
     const TIMEOUT_DURATION = 10000; // 10秒
+    const QUESTIONS_PER_GAME = 20; // 1ゲームの問題数
     const language = navigator.language.startsWith("ja") ? "ja" : "en";
+
+    // 配列をシャッフルする関数
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
 
     // タイマーの作成と表示
     function createTimer() {
@@ -70,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
 
       // 正解を表示
-      const questionData = questions[currentQuestionIndex];
+      const questionData = shuffledQuestions[currentQuestionIndex];
       const correctButton = buttons[questionData.correct];
       if (correctButton) {
         correctButton.classList.add("correct");
@@ -94,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       // 2秒後に次の問題へ
       setTimeout(() => {
         currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
+        if (currentQuestionIndex < QUESTIONS_PER_GAME) {
           loadQuestion();
         } else {
           showResults();
@@ -107,6 +118,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       currentQuestionIndex = 0;
       score = 0;
       currentScoreDisplay.textContent = score;
+      
+      // 問題をシャッフルして最初の20問を選択
+      shuffledQuestions = shuffleArray([...questions]).slice(0, QUESTIONS_PER_GAME);
       
       // DOMの更新を一括で行う
       requestAnimationFrame(() => {
@@ -128,7 +142,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // 問題をロード
     function loadQuestion() {
-      const questionData = questions[currentQuestionIndex];
+      const questionData = shuffledQuestions[currentQuestionIndex];
       
       // 質問文を更新
       questionText.textContent = language === "ja" ? questionData.question : questionData.questionEn;
@@ -174,7 +188,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         clearTimeout(timeoutId);
       }
 
-      const questionData = questions[currentQuestionIndex];
+      const questionData = shuffledQuestions[currentQuestionIndex];
       const correctIndex = questionData.correct;
       const buttons = Array.from(choicesContainer.querySelectorAll('.choice-btn'));
 
@@ -219,7 +233,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       // 2秒後に次の問題へ
       setTimeout(() => {
         currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
+        if (currentQuestionIndex < QUESTIONS_PER_GAME) {
           loadQuestion();
         } else {
           showResults();
