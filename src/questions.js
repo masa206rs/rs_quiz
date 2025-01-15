@@ -160,26 +160,6 @@ export const questions = [
     "category": "NA"
   },
   {
-    "question": "初代ロードスター (NA) の開発で、エンジンレイアウトが縦置きに変更された際に、オイルミスト分離容積確保のため、量産出図直前になって専用部品化が決定された部品は何？",
-    "questionEn": "In the development of the first generation Roadster (NA), when the engine layout was changed to a vertical arrangement, which part was decided to be made into a dedicated part immediately before the mass production drawing because it was necessary to secure oil mist separation volume?",
-    "options": [
-      "オイルパン",
-      "オイルフィルター",
-      "カムカバー",
-      "クランクシャフト"
-    ],
-    "optionsEn": [
-      "Oil pan",
-      "Oil filter",
-      "Cam cover",
-      "Crankshaft"
-    ],
-    "correct": 2,
-    "explanation": "初代ロードスターの開発では、エンジンレイアウトが縦置きに変更された際に、オイルミスト分離容積確保のため、カムカバーが量産出図直前になって専用部品化が決定されました。",
-    "explanationEn": "In the development of the first generation Roadster, when the engine layout was changed to a vertical arrangement, it was decided to make the cam cover a dedicated part immediately before the mass production drawing in order to secure oil mist separation volume. ",
-    "category": "NA"
-  },
-  {
     "question": "初代ロードスター (NA) の開発において、設計コンセプトを具体化するために、どの車種のコンポーネンツが使用された？",
     "questionEn": "What model's components were used to embody the design concept in the development of the first generation Roadster (NA)?",
     "options": [
@@ -190,7 +170,7 @@ export const questions = [
     ],
     "optionsEn": [
       "RX-7",
-      "Familia",
+      "Familia",  
       "Capella",
       "Titan"
     ],
@@ -440,26 +420,6 @@ export const questions = [
     "category": "NB"
   },
   {
-    "question": "3代目ロードスター (NC) は、マツダの新しいデザインテーマを導入しました。そのテーマは何？",
-    "questionEn": "The third generation Roadster (NC) introduced a new design theme for Mazda. What was the theme?",
-    "options": [
-      "魂動",
-      "Zoom-Zoom",
-      "鼓動",
-      "流"
-    ],
-    "optionsEn": [
-      "Kodo",
-      "Zoom-Zoom",
-      "Kodou",
-      "Nagare"
-    ],
-    "correct": 0,
-    "explanation": "3代目ロードスター (NC) は、マツダの新しいデザインテーマである「魂動（こどう）-Soul of Motion」を反映したデザインを採用しました。",
-    "explanationEn": "The third-generation Roadster (NC) adopted a design that reflects Mazda's new design theme, \"Kodo -Soul of Motion\". ",
-    "category": "NC"
-  },
-  {
     "question": "3代目ロードスター (NC) で、新たに採用されたエンジンは？",
     "questionEn": "What new engine was adopted for the third generation Roadster (NC)?",
     "options": [
@@ -600,7 +560,7 @@ export const questions = [
     "category": "ND"
   },
   {
-    "question": "4代目ロードスター (ND) の開発主査は誰？",
+    "question": "4代目ロードスター (ND) の最初の開発主査は誰？",
     "questionEn": "Who was the chief development engineer for the fourth generation Roadster (ND)?",
     "options": [
       "田中俊治",
@@ -638,5 +598,845 @@ export const questions = [
     "explanation": "4代目ロードスター (ND) では、「ロードスターRF (リトラクタブル ファストバック)」として、リトラクタブルハードトップモデルが追加されました。",
     "explanationEn": "A retractable hardtop model was added to the fourth generation Roadster (ND) as the \"Roadster RF (Retractable Fastback)\". ",
     "category": "ND"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発コードネームは？",
+    "questionEn": "What was the development code name for the first generation Roadster (NA)?",
+    "options": [
+      "Duo 101",
+      "V705",
+      "OGG",
+      "Jinba Ittai"
+    ],
+    "optionsEn": [
+      "Duo 101",
+      "V705",
+      "OGG",
+      "Jinba Ittai"
+    ],
+    "correct": 0,
+    "explanation": "初代ロードスター (NA) は、開発コードネーム「Duo 101」として開発されました。 ",
+    "explanationEn": "The first generation Roadster (NA) was developed under the development code name \"Duo 101\". ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) がデビューしたモーターショーは？",
+    "questionEn": "At which motor show did the first generation Roadster (NA) debut?",
+    "options": [
+      "東京モーターショー",
+      "デトロイトモーターショー",
+      "シカゴモーターショー",
+      "ジュネーブモーターショー"
+    ],
+    "optionsEn": [
+      "Tokyo Motor Show",
+      "Detroit Motor Show",
+      "Chicago Auto Show",
+      "Geneva Motor Show"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) は、1989年のシカゴオートショーでデビューしました。 ",
+    "explanationEn": "The first generation Roadster (NA) debuted at the 1989 Chicago Auto Show. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のデザインコンセプトを象徴する言葉は？",
+    "questionEn": "What word symbolizes the design concept of the first generation Roadster (NA)?",
+    "options": [
+      "Kodo",
+      "Zoom-Zoom",
+      "Jinba Ittai",
+      "SKYACTIV"
+    ],
+    "optionsEn": [
+      "Kodo",
+      "Zoom-Zoom",
+      "Jinba Ittai",
+      "SKYACTIV"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) は、「人馬一体」のデザインコンセプトのもとに作られました。 ",
+    "explanationEn": "The first generation Roadster (NA) was created under the design concept of \"Jinba Ittai.\" ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の初期モデルに搭載されたエンジンは？",
+    "questionEn": "What engine was installed in the initial model of the first generation Roadster (NA)?",
+    "options": [
+      "1.3L 直列4気筒",
+      "1.6L 直列4気筒",
+      "1.8L 直列4気筒",
+      "2.0L ロータリーエンジン"
+    ],
+    "optionsEn": [
+      "1.3L inline-four",
+      "1.6L inline-four",
+      "1.8L inline-four",
+      "2.0L rotary engine"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) の初期モデルには、1.6L 直列4気筒DOHC16バルブエンジンが搭載されました。 ",
+    "explanationEn": "The initial model of the first generation Roadster (NA) was equipped with a 1.6L inline-four DOHC 16-valve engine. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) に設定されたトランスミッションは？",
+    "questionEn": "What transmissions were available for the first generation Roadster (NA)?",
+    "options": [
+      "5速MTのみ",
+      "4速ATのみ",
+      "5速MTと4速AT",
+      "6速MTと5速AT"
+    ],
+    "optionsEn": [
+      "5-speed MT only",
+      "4-speed AT only",
+      "5-speed MT and 4-speed AT",
+      "6-speed MT and 5-speed AT"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) には、当初5速MTのみの設定でしたが、後に4速ATも追加されました。 ",
+    "explanationEn": "The first generation Roadster (NA) was initially available only with a 5-speed MT, but a 4-speed AT was later added. ",
+    "category": "NA"
+  },
+  {
+    "question": "2代目ロードスター (NB) で廃止された装備は？",
+    "questionEn": "What feature was discontinued in the second generation Roadster (NB)?",
+    "options": [
+      "リトラクタブルヘッドランプ",
+      "ソフトトップ",
+      "フロントエンジン",
+      "後輪駆動"
+    ],
+    "optionsEn": [
+      "Retractable headlights",
+      "Soft top",
+      "Front engine",
+      "Rear-wheel drive"
+    ],
+    "correct": 0,
+    "explanation": "2代目ロードスター (NB) では、歩行者安全基準に対応するため、リトラクタブルヘッドランプが廃止されました。 ",
+    "explanationEn": "In the second generation Roadster (NB), retractable headlights were discontinued to meet pedestrian safety standards. ",
+    "category": "NB"
+  },
+  {
+    "question": "2代目ロードスター (NB) に追加されたトランスミッションは？",
+    "questionEn": "What transmission was added to the second generation Roadster (NB)?",
+    "options": [
+      "4速AT",
+      "5速MT",
+      "6速MT",
+      "CVT"
+    ],
+    "optionsEn": [
+      "4-speed AT",
+      "5-speed MT",
+      "6-speed MT",
+      "CVT"
+    ],
+    "correct": 2,
+    "explanation": "2代目ロードスター (NB) では、6速MTが追加されました。 ",
+    "explanationEn": "A 6-speed MT was added to the second generation Roadster (NB). ",
+    "category": "NB"
+  },
+  {
+    "question": "2代目ロードスター (NB) で唯一、工場出荷時にターボチャージャーを搭載したモデルは？",
+    "questionEn": "What was the only second generation Roadster (NB) model to be turbocharged from the factory?",
+    "options": [
+      "RS",
+      "Mazdaspeed MX-5",
+      "10周年記念車",
+      "NR リミテッド"
+    ],
+    "optionsEn": [
+      "RS",
+      "Mazdaspeed MX-5",
+      "10th Anniversary Edition",
+      "NR Limited"
+    ],
+    "correct": 1,
+    "explanation": "2代目ロードスター (NB) で唯一、工場出荷時にターボチャージャーを搭載したのは、Mazdaspeed MX-5です。 ",
+    "explanationEn": "The only second generation Roadster (NB) model to be turbocharged from the factory was the Mazdaspeed MX-5. ",
+    "category": "NB"
+  },
+  {
+    "question": "3代目ロードスター (NC) で採用されたサスペンション形式は？",
+    "questionEn": "What type of suspension system was adopted in the third generation Roadster (NC)?",
+    "options": [
+      "フロント:ストラット式、リア:トレーリングアーム式",
+      "フロント:ダブルウィッシュボーン式、リア:トレーリングアーム式",
+      "フロント:ストラット式、リア:マルチリンク式",
+      "フロント:ダブルウィッシュボーン式、リア:マルチリンク式"
+    ],
+    "optionsEn": [
+      "Front: strut, Rear: trailing arm",
+      "Front: double wishbone, Rear: trailing arm",
+      "Front: strut, Rear: multi-link",
+      "Front: double wishbone, Rear: multi-link"
+    ],
+    "correct": 3,
+    "explanation": "3代目ロードスター (NC) では、フロントにダブルウィッシュボーン式、リアにマルチリンク式サスペンションが採用されました。 ",
+    "explanationEn": "The third generation Roadster (NC) adopted a double wishbone suspension system at the front and a multi-link suspension system at the rear. ",
+    "category": "NC"
+  },
+  {
+    "question": "3代目ロードスター (NC) に設定された電動格納式ハードトップの名称は？",
+    "questionEn": "What is the name of the power retractable hard top available for the third generation Roadster (NC)?",
+    "options": [
+      "RHT",
+      "RF",
+      "PRHT",
+      "ND"
+    ],
+    "optionsEn": [
+      "RHT",
+      "RF",
+      "PRHT",
+      "ND"
+    ],
+    "correct": 0,
+    "explanation": "3代目ロードスター (NC) に設定された電動格納式ハードトップは、「パワーリトラクタブルハードトップ (RHT)」と呼ばれました。 ",
+    "explanationEn": "The power retractable hard top available for the third generation Roadster (NC) was called \"Power Retractable Hard Top (RHT)\". ",
+    "category": "NC"
+  },
+  {
+    "question": "初代ロードスター (NA) の量産開発コードは？",
+    "questionEn": "What was the mass production development code for the first generation Roadster (NA)?",
+    "options": [
+      "P729",
+      "NE05",
+      "J58G",
+      "ND1"
+    ],
+    "optionsEn": [
+      "P729",
+      "NE05",
+      "J58G",
+      "ND1"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) の量産開発コードは「J58G」でした。 ",
+    "explanationEn": "The mass production development code for the first generation Roadster (NA) was \"J58G\". ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、デザイン案を主に提案したのは？",
+    "questionEn": "In the development of the first-generation Roadster (NA), which entity primarily proposed the design concept?",
+    "options": [
+      "マツダ本社",
+      "マツダヨーロッパ",
+      "マツダ横浜デザイン本部",
+      "マツダ北米デザインスタジオ"
+    ],
+    "optionsEn": [
+      "Mazda Headquarters",
+      "Mazda Europe",
+      "Mazda Yokohama Design Headquarters",
+      "Mazda North American Design Studio"
+    ],
+    "correct": 3,
+    "explanation": "初代ロードスター (NA) の開発では、マツダ北米デザインスタジオ (MRA) が主要なデザイン案を提案しました。 ",
+    "explanationEn": "In the development of the first-generation Roadster (NA), Mazda North American Design Studio (MRA) primarily proposed the design concept. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発初期段階における試作車のニックネームは？",
+    "questionEn": "What was the nickname of the prototype vehicle in the early stages of development of the first-generation Roadster (NA)?",
+    "options": [
+      "りんごちゃん",
+      "ひびき",
+      "ユーノス",
+      "グラム作戦"
+    ],
+    "optionsEn": [
+      "Apple-chan",
+      "Hibiki",
+      "Eunos",
+      "Gram Strategy"
+    ],
+    "correct": 0,
+    "explanation": "初代ロードスター (NA) の開発初期段階における試作車は、赤い車体色とボンネットの形状から「りんごちゃん」というニックネームで呼ばれていました。 ",
+    "explanationEn": "The prototype vehicle in the early stages of development of the first generation Roadster (NA) was nicknamed \"Apple-chan\" due to its red body color and the shape of its bonnet. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、試作車が製作された会社は？",
+    "questionEn": "Which company manufactured the prototype during the development of the first generation Roadster (NA)?",
+    "options": [
+      "I.A.D.",
+      "Pininfarina",
+      "Lotus",
+      "Bertone"
+    ],
+    "optionsEn": [
+      "I.A.D.",
+      "Pininfarina",
+      "Lotus",
+      "Bertone"
+    ],
+    "correct": 0,
+    "explanation": "初代ロードスター (NA) の開発において、試作車はイギリスのI.A.D.社で製作されました。 ",
+    "explanationEn": "During the development of the first generation Roadster (NA), the prototype was manufactured by I.A.D. in the UK. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、走行試験が行われた国は？",
+    "questionEn": "In which countries were the driving tests conducted during the development of the first-generation Roadster (NA)?",
+    "options": [
+      "イギリスとアメリカ",
+      "日本とドイツ",
+      "イタリアとフランス",
+      "オーストラリアと南アフリカ"
+    ],
+    "optionsEn": [
+      "UK and USA",
+      "Japan and Germany",
+      "Italy and France",
+      "Australia and South Africa"
+    ],
+    "correct": 0,
+    "explanation": "初代ロードスター (NA) の開発において、走行試験はイギリスとアメリカで行われました。 ",
+    "explanationEn": "Driving tests were conducted in the UK and the USA during the development of the first-generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、プロジェクトの正式開発が決定された要因は？",
+    "questionEn": "What factor led to the decision to formally develop the project during the development of the first-generation Roadster (NA)?",
+    "options": [
+      "経営陣の強い意向",
+      "競合他社の動向",
+      "走行試験における一般市民の好意的反応",
+      "政府からの助成金"
+    ],
+    "optionsEn": [
+      "Strong intention of the management team",
+      "Trends of competitors",
+      "Positive response from the general public in driving tests",
+      "Government subsidies"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) の開発において、走行試験中に一般市民から好意的な反応を得られたことが、プロジェクトの正式開発決定に繋がりました。 ",
+    "explanationEn": "During the development of the first generation Roadster (NA), the positive response from the general public during driving tests led to the decision to formally develop the project. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、正式開発時のプロジェクトコードは？",
+    "questionEn": "What was the project code during the formal development of the first generation Roadster (NA)?",
+    "options": [
+      "Project Miata",
+      "P729",
+      "Eunos Roadster",
+      "Jinba Ittai"
+    ],
+    "optionsEn": [
+      "Project Miata",
+      "P729",
+      "Eunos Roadster",
+      "Jinba Ittai"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) の開発において、正式開発時のプロジェクトコードは「P729」でした。 ",
+    "explanationEn": "The project code during the formal development of the first generation Roadster (NA) was \"P729\". ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、マツダ社内で「リバーサイドホテル」と呼ばれていた場所は？",
+    "questionEn": "During the development of the first-generation Roadster (NA), what location within Mazda was referred to as the \"Riverside Hotel\"?",
+    "options": [
+      "社員寮",
+      "福利厚生施設",
+      "車両保管棟",
+      "役員会議室"
+    ],
+    "optionsEn": [
+      "Employee dormitory",
+      "Employee welfare facility",
+      "Vehicle storage building",
+      "Executive boardroom"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) の開発において、「リバーサイドホテル」と呼ばれていたのは、広島本社工場デザイン棟西側に隣接する車両保管棟の5階です。 ",
+    "explanationEn": "During the development of the first generation Roadster (NA), the fifth floor of the vehicle storage building adjacent to the west side of the Hiroshima Headquarters Factory Design Building was called the \"Riverside Hotel\". ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、デザインの最終決定が下されたのはいつ？",
+    "questionEn": "When was the final design decision made during the development of the first-generation Roadster (NA)?",
+    "options": [
+      "1985年夏",
+      "1986年夏",
+      "1987年秋",
+      "1988年春"
+    ],
+    "optionsEn": [
+      "Summer 1985",
+      "Summer 1986",
+      "Autumn 1987",
+      "Spring 1988"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) の開発において、デザインの最終決定が下されたのは1987年秋です。 ",
+    "explanationEn": "The final design decision was made in the autumn of 1987 during the development of the first-generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、デザインの最終決定を後押しした要因は？",
+    "questionEn": "What was the contributing factor that supported the final design decision during the development of the first-generation Roadster (NA)?",
+    "options": [
+      "競合他社の類似車種の発表",
+      "アメリカでのユーザーインタビュー調査の結果",
+      "新型エンジンの開発成功",
+      "バブル経済による好景気"
+    ],
+    "optionsEn": [
+      "Announcement of a similar model by a competitor",
+      "Results of user interview surveys in the United States",
+      "Successful development of a new engine",
+      "Economic boom due to the bubble economy"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) の開発において、アメリカで実施したユーザーインタビュー調査で「発売されたらぜひ買いたい」という回答が多数得られたことが、デザインの最終決定を後押ししました。 ",
+    "explanationEn": "The fact that a large number of respondents in a user interview survey conducted in the United States answered that they would \"definitely buy it if it were released\" encouraged the final design decision in the development of the first-generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) に採用されたヘッドライトの形式は？",
+    "questionEn": "What type of headlights were used in the first-generation Roadster (NA)?",
+    "options": [
+      "固定式ヘッドライト",
+      "リトラクタブルヘッドライト",
+      "プロジェクターヘッドライト",
+      "LEDヘッドライト"
+    ],
+    "optionsEn": [
+      "Fixed headlights",
+      "Retractable headlights",
+      "Projector headlights",
+      "LED headlights"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) には、リトラクタブルヘッドライトが採用されました。 ",
+    "explanationEn": "Retractable headlights were used in the first-generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のリアコンビネーションランプは、ある美術館に永久収蔵されています。その美術館は？",
+    "questionEn": "The rear combination lamps of the first generation Roadster (NA) are permanently preserved in a certain art museum. What is the name of the museum?",
+    "options": [
+      "大英博物館",
+      "ルーブル美術館",
+      "ニューヨーク近代美術館",
+      "メトロポリタン美術館"
+    ],
+    "optionsEn": [
+      "The British Museum",
+      "The Louvre Museum",
+      "The Museum of Modern Art, New York",
+      "The Metropolitan Museum of Art"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のリアコンビネーションランプは、ニューヨーク近代美術館 (MoMA) に永久収蔵されています。 ",
+    "explanationEn": "The rear combination lamps of the first generation Roadster (NA) are permanently preserved in the Museum of Modern Art, New York (MoMA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、市場投入までの期間は？",
+    "questionEn": "What was the period from development to market launch for the first-generation Roadster (NA)?",
+    "options": [
+      "約半年",
+      "約1年",
+      "約1年半",
+      "約2年"
+    ],
+    "optionsEn": [
+      "About half a year",
+      "About 1 year",
+      "About 1 and a half years",
+      "About 2 years"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) は、量産モデル決定後、約1年半という短い期間で市場に投入されました。 ",
+    "explanationEn": "The first generation Roadster (NA) was brought to market in a short period of about one and a half years after the mass production model was decided. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、短期間での市場投入を実現するために、多く採用された手法は？",
+    "questionEn": "What method was widely adopted to achieve a short time to market during the development of the first generation Roadster (NA)?",
+    "options": [
+      "海外企業への設計委託",
+      "生産工程の簡略化",
+      "既存車両の部品流用",
+      "開発チームの人員削減"
+    ],
+    "optionsEn": [
+      "Outsourcing of design to overseas companies",
+      "Simplification of production processes",
+      "Diversion of parts from existing vehicles",
+      "Reduction of development team personnel"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) は、短期間での市場投入を実現するために、既存車両の部品流用を多く採用しました。 ",
+    "explanationEn": "In order to achieve a short time to market, the first generation Roadster (NA) adopted many parts from existing vehicles. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の日本仕様車において、フロントバンパー中央に取り付けられたエンブレムは？",
+    "questionEn": "What emblem was attached to the center of the front bumper on the Japanese specification of the first-generation Roadster (NA)?",
+    "options": [
+      "マツダのブランドエンブレム",
+      "ユーノスのブランドエンブレム",
+      "ロードスターの専用エンブレム",
+      "エンブレムは取り付けられていない"
+    ],
+    "optionsEn": [
+      "Mazda brand emblem",
+      "Eunos brand emblem",
+      "Roadster exclusive emblem",
+      "No emblem attached"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) の日本仕様車において、フロントバンパー中央に取り付けられたエンブレムは、ユーノスのブランドエンブレムである「Vマーク」でした。 ",
+    "explanationEn": "The emblem attached to the center of the front bumper on the Japanese specification of the first-generation Roadster (NA) was the Eunos brand emblem, the \"V mark\". ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のスピードメーターおよびタコメーターの縁取りに採用された加工方法は？",
+    "questionEn": "What processing method was used for the edging of the speedometer and tachometer of the first generation Roadster (NA)?",
+    "options": [
+      "塗装",
+      "メッキ",
+      "ホットスタンプ",
+      "シルクスクリーン印刷"
+    ],
+    "optionsEn": [
+      "Painting",
+      "Plating",
+      "Hot stamping",
+      "Silk screen printing"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のスピードメーターおよびタコメーターの縁取りには、高級感を出すためにホットスタンプ工法が採用されました。 ",
+    "explanationEn": "Hot stamping was used for the edging of the speedometer and tachometer of the first generation Roadster (NA) to give it a luxurious feel. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、足回りのレイアウト決定に影響を与えた要因は？",
+    "questionEn": "What factor influenced the decision on the suspension layout during the development of the first generation Roadster (NA)?",
+    "options": [
+      "当時のマツダの主力車種がFRだった",
+      "開発責任者の個人的な好み",
+      "競合他社のライトウェイトスポーツカーがFFまたはミッドシップだった",
+      "FRの方が製造コストが安かった"
+    ],
+    "optionsEn": [
+      "Mazda's main models at the time were FR",
+      "Personal preference of the development manager",
+      "Competing lightweight sports cars were FF or mid-engined",
+      "FR was cheaper to manufacture"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) の開発において、競合他社のライトウェイトスポーツカーがFFまたはミッドシップだったため、差別化を図るためにFRレイアウトが採用されました。 ",
+    "explanationEn": "The FR layout was adopted for the first-generation Roadster (NA) to differentiate it from competing lightweight sports cars, which were FF or mid-engined. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のエキゾーストマニホールドの設計において、参考にされたものは？",
+    "questionEn": "What was used as a reference in the design of the exhaust manifold for the first generation Roadster (NA)?",
+    "options": [
+      "レーシングカー",
+      "大型トラック",
+      "オートバイ",
+      "飛行機"
+    ],
+    "optionsEn": [
+      "Racing car",
+      "Large truck",
+      "Motorcycle",
+      "Airplane"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のエキゾーストマニホールドの設計において、開発担当者は自身所有のホンダ・ドリームCB400FOURを参考に、エキゾーストパイプの集合部分の設計を行いました。 ",
+    "explanationEn": "The development engineer referred to his own Honda Dream CB400FOUR when designing the exhaust manifold for the first generation Roadster (NA), and designed the exhaust pipe joint section. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のマフラー開発において、量産品決定のために製作された試作品は？",
+    "questionEn": "How many prototypes were made during the development of the muffler for the first generation Roadster (NA) before the mass production model was decided?",
+    "options": [
+      "数個",
+      "数十個",
+      "数百個",
+      "トラックの荷台に積みきれないほどの数"
+    ],
+    "optionsEn": [
+      "A few",
+      "Dozens",
+      "Hundreds",
+      "Countless, enough to not fit on the bed of a truck"
+    ],
+    "correct": 3,
+    "explanation": "初代ロードスター (NA) のマフラー開発において、量産品決定のためにトラックの荷台に積みきれないほどの数の試作品が製作されました。 ",
+    "explanationEn": "Countless prototypes were made during the development of the muffler for the first generation Roadster (NA), enough to not fit on the bed of a truck, before the mass production model was decided. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のエンジンカムカバーのデザインは、いつ決定された？",
+    "questionEn": "When was the engine cam cover design decided for the first generation Roadster (NA)?",
+    "options": [
+      "開発初期段階",
+      "量産試作段階",
+      "量産出図直前",
+      "発売後"
+    ],
+    "optionsEn": [
+      "Early stage of development",
+      "Mass production prototype stage",
+      "Immediately before mass production drawings",
+      "After launch"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のエンジンカムカバーは、当初ファミリア用のものを流用する予定でしたが、量産出図直前に専用部品化が決定され、デザイン本部に依頼して一晩でデザインされました。 ",
+    "explanationEn": "The engine cam cover for the first-generation Roadster (NA) was originally planned to be diverted from the Familia, but immediately before the mass production drawings, it was decided to make it a dedicated part, and the design department was asked to design it overnight. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のエンジンカムカバーの文字の形状は、NA6CEとNA8CEで違います。その違いは？",
+    "questionEn": "The shape of the letters on the engine cam cover of the first-generation Roadster (NA) is different between NA6CE and NA8CE. What is the difference?",
+    "options": [
+      "NA6CEはゴシック体、NA8CEは明朝体",
+      "NA6CEは大文字、NA8CEは小文字",
+      "NA6CEは凹形状、NA8CEは凸形状",
+      "NA6CEは赤色、NA8CEは青色"
+    ],
+    "optionsEn": [
+      "NA6CE is Gothic, NA8CE is Mincho",
+      "NA6CE is uppercase, NA8CE is lowercase",
+      "NA6CE is concave, NA8CE is convex",
+      "NA6CE is red, NA8CE is blue"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のエンジンカムカバーの文字の形状は、NA6CEは凹形状、NA8CEは凸形状です。これは部品間違いを防ぐための生産現場からの要望によるものです。 ",
+    "explanationEn": "The shape of the letters on the engine cam cover of the first generation Roadster (NA) is concave for the NA6CE and convex for the NA8CE. This is due to a request from the production site to prevent parts mix-ups. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、レイアウト開発に導入されたマツダの内製3次元CADソフトの名前は？",
+    "questionEn": "What is the name of the in-house 3D CAD software developed by Mazda that was introduced for layout development in the first generation Roadster (NA)?",
+    "options": [
+      "CATIA",
+      "NX",
+      "Creo Parametric",
+      "GNC2"
+    ],
+    "optionsEn": [
+      "CATIA",
+      "NX",
+      "Creo Parametric",
+      "GNC2"
+    ],
+    "correct": 3,
+    "explanation": "初代ロードスター (NA) の開発において、レイアウト開発には、当時としては先進的なマツダの内製3次元CADソフト「GNC2」が導入されました。 ",
+    "explanationEn": "Mazda's in-house 3D CAD software \"GNC2\", which was advanced for its time, was introduced for layout development in the development of the first-generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のソフトトップ開発において、幌骨の収納方法を工夫した理由は？",
+    "questionEn": "What was the reason for devising the storage method for the soft top frame in the development of the first generation Roadster (NA)?",
+    "options": [
+      "軽量化のため",
+      "コスト削減のため",
+      "オープン時の幌の見栄えを良くするため",
+      "風の巻き込みを軽減するため"
+    ],
+    "optionsEn": [
+      "For weight reduction",
+      "For cost reduction",
+      "To improve the appearance of the top when open",
+      "To reduce wind noise"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のソフトトップ開発において、オープン時の幌の見栄えを良くするために、幌骨の収納方法を工夫しました。 ",
+    "explanationEn": "The soft top frame storage method was devised to improve the appearance of the top when open during the development of the first-generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のソフトトップ開発において、雨漏り対策として採用された構造は？",
+    "questionEn": "What structure was adopted as a countermeasure against rain leakage in the development of the first generation Roadster (NA) soft top?",
+    "options": [
+      "Aピラーに雨水を排出する構造",
+      "幌生地に防水コーティングを施す",
+      "幌骨の隙間をシーリング材で埋める",
+      "排水溝を車体下部に設置する"
+    ],
+    "optionsEn": [
+      "A structure that drains rainwater to the A-pillar",
+      "Apply a waterproof coating to the hood fabric",
+      "Fill the gaps in the hood frame with sealant",
+      "Install a drainage ditch at the bottom of the vehicle body"
+    ],
+    "correct": 0,
+    "explanation": "初代ロードスター (NA) のソフトトップ開発において、Aピラー上部とソフトトップ前側左右両端とドア三角窓上部の3部品が集約される点に雨漏りが発生する可能性がありました。対策として、「侵入を防ぐ」のではなく「水を排出する」構造のAピラー側ウェザーストリップを設計することで雨漏りを防ぎました。 ",
+    "explanationEn": "In the development of the soft top for the first-generation Roadster (NA), there was a possibility of rain leakage at the point where the three parts, the upper part of the A-pillar, the front left and right ends of the soft top, and the upper part of the door triangular window, were concentrated. As a countermeasure, rain leakage was prevented by designing an A-pillar side weather strip with a structure that \"drains water\" rather than \"prevents intrusion\". ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のシャシー開発において、乗って楽しい操縦安定性を実現するために採用されたサスペンション形式は？",
+    "questionEn": "What type of suspension system was adopted to achieve enjoyable handling stability in the chassis development of the first generation Roadster (NA)?",
+    "options": [
+      "マクファーソンストラット式",
+      "トレーリングアーム式",
+      "ダブルウィッシュボーン式",
+      "マルチリンク式"
+    ],
+    "optionsEn": [
+      "MacPherson strut type",
+      "Trailing arm type",
+      "Double wishbone type",
+      "Multi-link type"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のシャシー開発において、乗って楽しい操縦安定性を実現するために、ダブルウィッシュボーン式サスペンションが採用されました。 ",
+    "explanationEn": "The double wishbone suspension system was adopted to achieve enjoyable handling stability in the chassis development of the first generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のシャシー開発において、直感的なハンドル操作を実現するために採用されたステアリング形式は？",
+    "questionEn": "What type of steering system was adopted to achieve intuitive steering operation in the chassis development of the first generation Roadster (NA)?",
+    "options": [
+      "リサーキュレーティングボール式",
+      "ラックアンドピニオン式",
+      "電動パワーステアリング",
+      "油圧パワーステアリング"
+    ],
+    "optionsEn": [
+      "Recirculating ball type",
+      "Rack and pinion type",
+      "Electric power steering",
+      "Hydraulic power steering"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) のシャシー開発において、直感的なハンドル操作を実現するために、ラックアンドピニオン式ステアリングが採用されました。 ",
+    "explanationEn": "Rack and pinion steering was adopted to achieve intuitive steering operation in the chassis development of the first generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) の開発において、シャシー設計の基本レイアウトを最初に示したのは？",
+    "questionEn": "Who initially presented the basic layout of the chassis design during the development of the first generation Roadster (NA)?",
+    "options": [
+      "マツダの社内設計チーム",
+      "イギリスのI.A.D.社のエンジニア",
+      "イタリアのカロッツェリア",
+      "アメリカのデザインコンサルタント"
+    ],
+    "optionsEn": [
+      "Mazda's in-house design team",
+      "Engineers from I.A.D. in the UK",
+      "Italian Carrozzeria",
+      "American design consultant"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) のシャシー設計の基本レイアウトを最初に示したのは、イギリスのI.A.D.社のエンジニアでした。 ",
+    "explanationEn": "The basic layout of the chassis design for the first generation Roadster (NA) was initially presented by engineers from I.A.D. in the UK. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のシャシー設計において、コスト削減のために重視されたのは？",
+    "questionEn": "What was emphasized to reduce costs in the chassis design of the first generation Roadster (NA)?",
+    "options": [
+      "高価な素材の使用削減",
+      "部品点数の削減",
+      "部品の共通化",
+      "組み立て工程の簡略化"
+    ],
+    "optionsEn": [
+      "Reducing the use of expensive materials",
+      "Reducing the number of parts",
+      "Commonization of parts",
+      "Simplification of assembly process"
+    ],
+    "correct": 2,
+    "explanation": "初代ロードスター (NA) のシャシー設計において、コスト削減のために部品の共通化が重視されました。 ",
+    "explanationEn": "Commonization of parts was emphasized to reduce costs in the chassis design of the first generation Roadster (NA). ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のユーノスブランドでの販売が終了したのはいつ？",
+    "questionEn": "When did sales of the first-generation Roadster (NA) under the Eunos brand end?",
+    "options": [
+      "1993年",
+      "1996年",
+      "1998年",
+      "2000年"
+    ],
+    "optionsEn": [
+      "1993",
+      "1996",
+      "1998",
+      "2000"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) のユーノスブランドでの販売は、ユーノスチャンネルの廃止に伴い、1996年3月末で終了しました。 ",
+    "explanationEn": "Sales of the first generation Roadster (NA) under the Eunos brand ended at the end of March 1996, following the abolition of the Eunos channel. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のユーノスブランドでの販売終了後、販売チャネルとなったのは？",
+    "questionEn": "After the end of sales of the first-generation Roadster (NA) under the Eunos brand, which sales channel took over?",
+    "options": [
+      "マツダ店",
+      "マツダアンフィニ店",
+      "オートザム店",
+      "オートラマ店"
+    ],
+    "optionsEn": [
+      "Mazda Store",
+      "Mazda Anfini Store",
+      "Autozam Store",
+      "Autorma Store"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) は、ユーノスブランドでの販売終了後、マツダアンフィニ店で販売されることになりました。 ",
+    "explanationEn": "After the end of sales of the first generation Roadster (NA) under the Eunos brand, it was sold at Mazda Anfini stores. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) は、何度大きなマイナーチェンジを受けましたか？",
+    "questionEn": "How many major minor changes did the first-generation Roadster (NA) undergo?",
+    "options": [
+      "1回",
+      "2回",
+      "3回",
+      "4回"
+    ],
+    "optionsEn": [
+      "Once",
+      "Twice",
+      "Three times",
+      "Four times"
+    ],
+    "correct": 1,
+    "explanation": "初代ロードスター (NA) は、2度の大きなマイナーチェンジを受けました。 ",
+    "explanationEn": "The first generation Roadster (NA) underwent two major minor changes. ",
+    "category": "NA"
+  },
+  {
+    "question": "初代ロードスター (NA) のリアに貼られた “Roadster” のロゴプレートの文字色は、モデルによって異なります。NA6CEの文字色は？",
+    "questionEn": "The color of the letters on the \"Roadster\" logo plate on the rear of the first generation Roadster (NA) differs depending on the model. What is the letter color for the NA6CE?",
+    "options": [
+      "黒色",
+      "赤色",
+      "緑色",
+      "黄色"
+    ],
+    "optionsEn": [
+      "Black",
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "correct": 0,
+    "explanation": "初代ロードスター (NA) のリアに貼られた “Roadster” のロゴプレートの文字色は、NA6CEは黒色です。 ",
+    "explanationEn": "The color of the letters on the \"Roadster\" logo plate on the rear of the first generation Roadster (NA) is black for the NA6CE. ",
+    "category": "NA"
   }
 ];

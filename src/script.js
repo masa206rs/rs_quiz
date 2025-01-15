@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let score = 0;
     let timeoutId = null;
     let shuffledQuestions = [];
-    const TIMEOUT_DURATION = 10000; // 10秒
+    const TIMEOUT_DURATION = 30000; // 30秒
     const QUESTIONS_PER_GAME = 20; // 1ゲームの問題数
     const language = navigator.language.startsWith("ja") ? "ja" : "en";
 
@@ -54,11 +54,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     function startTimer() {
       const timerBar = document.getElementById("timer-bar");
       if (timerBar) {
+        // タイマーの初期状態を設定
         timerBar.style.width = "100%";
-        // アニメーションをリセット
         timerBar.style.transition = "none";
-        timerBar.offsetHeight; // リフロー
-        timerBar.style.transition = "width linear 10s";
+        timerBar.offsetHeight; // 強制リフロー
+
+        // アニメーションをTIMEOUT_DURATIONに基づいて設定
+        const durationInSeconds = TIMEOUT_DURATION / 1000;
+        timerBar.style.transition = `width linear ${durationInSeconds}s`;
         timerBar.style.width = "0";
       }
 
@@ -262,7 +265,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function updateShareButtons() {
       const shareTextX = `Mazda Roadsterクイズで${score}点獲得しました！(20点満点) #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ`;
       const shareText = `Mazda Roadsterクイズで${score}点獲得しました！(20点満点)`;
-      const url = 'https://masa206rs.github.io/rs_quiz/';
+      const url = 'https://rs-quiz.onrender.com/';
       
       // Twitter
       const twitterShare = document.getElementById('twitter-share-result');
