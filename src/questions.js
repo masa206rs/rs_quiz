@@ -3,20 +3,20 @@ export const questions = [
     "question": "初代ロードスター (NA) の開発コードネームは何？",
     "questionEn": "What was the development code name for the first generation Roadster (NA)?",
     "options": [
-      "P705",
+      "P729",
       "J58G",
       "V705",
       "NE"
     ],
     "optionsEn": [
-      "P705",
+      "P729",
       "J58G",
       "V705",
       "NE"
     ],
     "correct": 1,
-    "explanation": "初代ロードスターの量産開発コードは「J58G」でした。",
-    "explanationEn": "The production development code for the first generation Roadster was \"J58G\".",
+    "explanation": "初代ロードスターの開発コードは「P729」でした。J58Gは量産開発コードです。",
+    "explanationEn": "The development code for the first-generation Roadster was \"P729,\" while \"J58G\" served as the mass production code.",
     "category": "NA"
   },
   {
@@ -274,9 +274,9 @@ export const questions = [
       "NB6C",
       "LF-VE"
     ],
-    "correct": 2,
-    "explanation": "2代目ロードスター (NB) では、1.6Lエンジンが復活し、NB6C型として販売されました。",
-    "explanationEn": "In the second generation Roadster (NB), the 1.6L engine was revived and sold as the NB6C type. ",
+    "correct": 0,
+    "explanation": "2代目ロードスター (NB) では、1.6Lエンジンが復活し、B6-ZE型として販売されました。",
+    "explanationEn": "In the second generation Roadster (NB), the 1.6L engine was revived and sold as the B6-ZE type. ",
     "category": "NB"
   },
   {
@@ -600,8 +600,8 @@ export const questions = [
     "category": "ND"
   },
   {
-    "question": "初代ロードスター (NA) の開発コードネームは？",
-    "questionEn": "What was the development code name for the first generation Roadster (NA)?",
+    "question": "初代ロードスター (NA) の開発において、カルフォルニアチームが提案したデザインコンセプトの名前は？",
+    "questionEn": "What was the name of the design concept proposed by the California team during the development of the first-generation Roadster (NA)?",
     "options": [
       "Duo 101",
       "V705",
@@ -615,8 +615,8 @@ export const questions = [
       "Jinba Ittai"
     ],
     "correct": 0,
-    "explanation": "初代ロードスター (NA) は、開発コードネーム「Duo 101」として開発されました。 ",
-    "explanationEn": "The first generation Roadster (NA) was developed under the development code name \"Duo 101\". ",
+    "explanation": "カリフォルニアチームが提案したデザインコンセプトは「Duo 101」であり、 IAD社が製作したぷとろタイプがV705です。 ",
+    "explanationEn": "The design concept proposed by the California team was \"Duo 101,\" and the prototype manufactured by IAD was \"V705.\" ",
     "category": "NA"
   },
   {
@@ -1020,26 +1020,6 @@ export const questions = [
     "category": "NA"
   },
   {
-    "question": "初代ロードスター (NA) のリアコンビネーションランプは、ある美術館に永久収蔵されています。その美術館は？",
-    "questionEn": "The rear combination lamps of the first generation Roadster (NA) are permanently preserved in a certain art museum. What is the name of the museum?",
-    "options": [
-      "大英博物館",
-      "ルーブル美術館",
-      "ニューヨーク近代美術館",
-      "メトロポリタン美術館"
-    ],
-    "optionsEn": [
-      "The British Museum",
-      "The Louvre Museum",
-      "The Museum of Modern Art, New York",
-      "The Metropolitan Museum of Art"
-    ],
-    "correct": 2,
-    "explanation": "初代ロードスター (NA) のリアコンビネーションランプは、ニューヨーク近代美術館 (MoMA) に永久収蔵されています。 ",
-    "explanationEn": "The rear combination lamps of the first generation Roadster (NA) are permanently preserved in the Museum of Modern Art, New York (MoMA). ",
-    "category": "NA"
-  },
-  {
     "question": "初代ロードスター (NA) の開発において、市場投入までの期間は？",
     "questionEn": "What was the period from development to market launch for the first-generation Roadster (NA)?",
     "options": [
@@ -1217,26 +1197,6 @@ export const questions = [
     "correct": 2,
     "explanation": "初代ロードスター (NA) のエンジンカムカバーの文字の形状は、NA6CEは凹形状、NA8CEは凸形状です。これは部品間違いを防ぐための生産現場からの要望によるものです。 ",
     "explanationEn": "The shape of the letters on the engine cam cover of the first generation Roadster (NA) is concave for the NA6CE and convex for the NA8CE. This is due to a request from the production site to prevent parts mix-ups. ",
-    "category": "NA"
-  },
-  {
-    "question": "初代ロードスター (NA) の開発において、レイアウト開発に導入されたマツダの内製3次元CADソフトの名前は？",
-    "questionEn": "What is the name of the in-house 3D CAD software developed by Mazda that was introduced for layout development in the first generation Roadster (NA)?",
-    "options": [
-      "CATIA",
-      "NX",
-      "Creo Parametric",
-      "GNC2"
-    ],
-    "optionsEn": [
-      "CATIA",
-      "NX",
-      "Creo Parametric",
-      "GNC2"
-    ],
-    "correct": 3,
-    "explanation": "初代ロードスター (NA) の開発において、レイアウト開発には、当時としては先進的なマツダの内製3次元CADソフト「GNC2」が導入されました。 ",
-    "explanationEn": "Mazda's in-house 3D CAD software \"GNC2\", which was advanced for its time, was introduced for layout development in the development of the first-generation Roadster (NA). ",
     "category": "NA"
   },
   {

@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         } else {
           showResults();
         }
-      }, 2000);
+      }, 100000);
     }
 
     // クイズ開始
