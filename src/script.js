@@ -23,13 +23,37 @@ document.addEventListener("DOMContentLoaded", async () => {
     const QUESTIONS_PER_GAME = 20; // 1ゲームの問題数
     const language = navigator.language.startsWith("ja") ? "ja" : "en";
 
+    // 前回の問題を記録
+    let previousQuestions = [];
+
     // 配列をシャッフルする関数
     function shuffleArray(array) {
+      // Fisher-Yatesアルゴリズムを使用
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
       }
       return array;
+    }
+
+    // 新しい問題セットを生成する関数
+    function generateNewQuestionSet() {
+      // 前回出題された問題を除外
+      let availableQuestions = questions.filter(q => !previousQuestions.includes(q));
+      
+      // 利用可能な問題が少なくなった場合、履歴をリセット
+      if (availableQuestions.length < QUESTIONS_PER_GAME) {
+        previousQuestions = [];
+        availableQuestions = [...questions];
+      }
+
+      // 問題をシャッフル
+      const shuffled = shuffleArray([...availableQuestions]);
+      
+      // 選択された問題を履歴に追加
+      previousQuestions = [...previousQuestions, ...shuffled.slice(0, QUESTIONS_PER_GAME)];
+      
+      return shuffled.slice(0, QUESTIONS_PER_GAME);
     }
 
     // タイマーの作成と表示
@@ -122,8 +146,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       score = 0;
       currentScoreDisplay.textContent = score;
       
-      // 問題をシャッフルして最初の20問を選択
-      shuffledQuestions = shuffleArray([...questions]).slice(0, QUESTIONS_PER_GAME);
+      // 新しい問題セットを生成
+      shuffledQuestions = generateNewQuestionSet();
       
       // DOMの更新を一括で行う
       requestAnimationFrame(() => {
