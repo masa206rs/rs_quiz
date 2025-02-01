@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let shuffledQuestions = [];
     const TIMEOUT_DURATION = 30000; // 30秒
     const QUESTIONS_PER_GAME = 20; // 1ゲームの問題数
+    const INTERVAL_DURATION = 10000; // 10秒
     const language = navigator.language.startsWith("ja") ? "ja" : "en";
 
     // 前回の問題を記録
@@ -137,7 +138,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         } else {
           showResults();
         }
-      }, 100000);
+      }, INTERVAL_DURATION);
     }
 
     // クイズ開始
