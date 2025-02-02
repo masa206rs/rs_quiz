@@ -509,6 +509,25 @@ body {
     text-decoration: underline;
 }
 
+/* ------------- 利用規約リンク ------------- */
+.terms-link {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.terms-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.terms-link a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 /* ------------- レスポンシブ ------------- */
 @media (max-width: 600px) {
     .container {

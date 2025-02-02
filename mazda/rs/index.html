@@ -8,11 +8,11 @@
     <link rel="canonical" href="https://carquiz.d2digital.net/mazda/rs/">
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Mazda Roadster クイズ">
@@ -55,15 +55,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mazda Roadster クイズ</title>
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script type="module">
         import { questions } from './src/questions.js';
         import './src/script.js';
     </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9780244040085124" crossorigin="anonymous"></script>
 </head>
 <body>
-    <img src="img/header1.png" alt="Roadster Quiz Header" class="header-image">
+    <img src="./img/header1.png" alt="Roadster Quiz Header" class="header-image">
     <div class="container">
         <!-- サイト説明 -->
         <div class="section description">
@@ -76,7 +79,7 @@
                 <button type="button" id="start-button" class="action-button">クイズを開始</button>
             </div>
             <div class="references-link">
-                <a href="references.html">問題作成の参考にした情報源</a>
+                <a href="./references.html">問題作成の参考にした情報源</a>
             </div>
             <!-- アクセスカウンター -->
             <div class="section counter">
@@ -137,10 +140,14 @@
                 <button type="button" id="restart-button" class="action-button">もう一度プレイ</button>
             </div>
             <div class="references-link">
-                <a href="references.html" target="_blank">問題作成の参考にした情報源はこちら</a>
+                <a href="./references.html" target="_blank">問題作成の参考にした情報源はこちら</a>
             </div>
         </div>
 
+    </div>
+
+    <div class="terms-link">
+        <a href="./termsofuse.html">利用規約</a>
     </div>
 
 </body>
