@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# サイトマップのURL（sitemap.xmlの配置場所に合わせて変更してください）
+Sitemap: https://carquiz.d2digital.net/sitemap.xml

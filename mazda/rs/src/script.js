@@ -179,8 +179,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       resultSection.style.display = 'none';
       resultSection.classList.add("hidden");
       playerSection.classList.remove("hidden");
-      description.classList.remove("hidden");
-      description.style.display = 'block';
       playerSection.style.display = 'block';
       headerImage.style.display = 'block';
       document.querySelector('h1').style.display = 'block';

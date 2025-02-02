@@ -110,10 +110,10 @@ export const questions =
     "questionEn": "When did production of the first generation Roadster (NA) end?",
     "difficulty": "一般",
     "options": [
-      "1997-12-01T00:00:00.000Z",
-      "1998-01-01T00:00:00.000Z",
-      "1998-12-01T00:00:00.000Z",
-      "1999-01-01T00:00:00.000Z"
+      "1997年12月",
+      "1998年1月",
+      "1998年12月",
+      "1999年1月"
     ],
     "optionsEn": [
       "December 1997",
@@ -2210,10 +2210,10 @@ export const questions =
     "questionEn": "When did the cumulative production of the fourth generation Roadster reach 1 million units?",
     "difficulty": "一般",
     "options": [
-      "2015-04-22T00:00:00.000Z",
-      "2016-04-22T00:00:00.000Z",
-      "2017-04-22T00:00:00.000Z",
-      "2018-04-22T00:00:00.000Z"
+      "2015年4月",
+      "2016年4月",
+      "2017年4月",
+      "2018年4月"
     ],
     "optionsEn": [
       "April 22, 2015",
@@ -2924,10 +2924,10 @@ export const questions =
     "questionEn": "When was the MOMO airbag steering wheel made standard on all models of the first generation Roadster (NA)?",
     "difficulty": "一般",
     "options": [
-      "1993-12-01T00:00:00.000Z",
-      "1995-02-01T00:00:00.000Z",
-      "1996-12-01T00:00:00.000Z",
-      "1998-01-01T00:00:00.000Z"
+      "1993年12月",
+      "1995年2月",
+      "1996年12月",
+      "1998年1月"
     ],
     "optionsEn": [
       "December 1993",
@@ -3092,10 +3092,10 @@ export const questions =
     "questionEn": "When was the Power Retractable Hard Top (RHT) specification added to the third generation Roadster (NC)?",
     "difficulty": "一般",
     "options": [
-      "2005-08-01T00:00:00.000Z",
-      "2006-01-01T00:00:00.000Z",
-      "2006-08-01T00:00:00.000Z",
-      "2007-01-01T00:00:00.000Z"
+      "2005年8月",
+      "2006年1月",
+      "2006年8月",
+      "2007年1月"
     ],
     "optionsEn": [
       "August 2005",
@@ -3659,10 +3659,10 @@ export const questions =
     "questionEn": "When was the 10th-anniversary meeting of the Roadster held?",
     "difficulty": "一般",
     "options": [
-      "1999-10-01T00:00:00.000Z",
-      "2000-03-01T00:00:00.000Z",
-      "1998-12-01T00:00:00.000Z",
-      "2001-05-01T00:00:00.000Z"
+      "1999年10月",
+      "2000年3月",
+      "1998年12月",
+      "2001年5月"
     ],
     "optionsEn": [
       "October 1999",

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- トップページ -->
+  <url>
+    <loc>https://carquiz.d2digital.net</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- クイズページ（例：index.html） -->
+  <url>
+    <loc>https://carquiz.d2digital.net/mazda/rs/index.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 参考情報ページ -->
+  <url>
+    <loc>https://carquiz.d2digital.net/mazda/rs/references.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- その他、追加したいページがあればここにURLエントリを追加 -->
+</urlset>

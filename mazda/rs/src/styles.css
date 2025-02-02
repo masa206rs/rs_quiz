@@ -188,6 +188,7 @@ body {
 /* ------------- サイト説明・SNS・アフィリエイト ------------- */
 .description {
     text-align: center;
+    display: none;
 }
 
 .description h1 {
