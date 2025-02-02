@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function updateShareButtons() {
       const shareTextX = `Mazda Roadsterクイズで${score}点獲得しました!(20点満点) #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ`;
       const shareText = `Mazda Roadsterクイズで${score}点獲得しました!(20点満点)`;
-      const url = 'https://rs-quiz.onrender.com/';
+      const url = 'https://carquiz.d2digital.net/mazda/rs/';
       
       const twitterShare = document.getElementById('twitter-share-result');
       twitterShare.href = `https://twitter.com/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareTextX)}`;
