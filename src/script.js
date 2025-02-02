@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const remainingQuestionsDisplay = document.getElementById("remaining-questions");
     const finalScoreDisplay = document.getElementById("final-score");
     const description = document.querySelector('.description');
+    const headerImage = document.querySelector('.header-image');
     
     // ゲーム状態
     let currentQuestionIndex = 0;
@@ -181,6 +182,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       description.classList.remove("hidden");
       description.style.display = 'block';
       playerSection.style.display = 'block';
+      headerImage.style.display = 'block';
       document.querySelector('h1').style.display = 'block';
     }
 
@@ -231,6 +233,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.querySelector('h1').style.display = 'none';
         description.style.display = 'none';
         playerSection.style.display = 'none';
+        headerImage.style.display = 'none';
         quizSection.style.display = 'block';
         description.classList.add("hidden");
         playerSection.classList.add("hidden");
