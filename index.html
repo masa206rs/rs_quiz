@@ -25,30 +25,17 @@
     <img src="img/header1.png" alt="Roadster Quiz Header" class="header-image">
     <div class="container">
         <!-- サイト説明 -->
-        <div class="section description">
-          <!--  <h1>Roadster<br/>トリビアクイズ！</h1> -->
-            <p>全20問がランダムに出題されます</p>
-            <p>問題毎の制限時間は30秒</p>
-            <p>あなたの知識を試してみよう！</p>
-            <p><a href="references.html">問題作成の参考にした情報源</a></p>
-            <!-- SNSシェアボタン -->
-            <div class="share-buttons">
-                <a href="https://twitter.com/share?url=https://rs-quiz.onrender.com&text=Mazda Roadsterクイズに挑戦しよう！ #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ" target="_blank" class="share-button x-twitter">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https://rs-quiz.onrender.com" target="_blank" class="share-button facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://line.me/R/msg/text/?Mazda Roadsterクイズに挑戦しよう！ #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ%0Ahttps://rs-quiz.onrender.com" target="_blank" class="share-button line">
-                    <i class="fab fa-line"></i>
-                </a>
-            </div>
+        <div class="section description" style="display: block;">
+           <h1></h1> 
         </div>
         
         <!-- クイズ開始セクション -->
         <div id="player-section" class="section">
             <div class="button-center">
                 <button type="button" id="start-button" class="action-button">クイズを開始</button>
+            </div>
+            <div class="references-link">
+                <a href="references.html">問題作成の参考にした情報源</a>
             </div>
             <!-- アクセスカウンター -->
             <div class="section counter">
@@ -60,6 +47,18 @@
                         <td><a href="https://ctr.stylemap.co.jp/"><img src="https://www.f-counter.net/ani2/65/1736755749/" alt="無料アクセスカウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table>
                     </aspan>
                 </span>
+            </div>
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <a href="https://twitter.com/share?url=https://rs-quiz.onrender.com&text=Mazda Roadsterクイズに挑戦しよう! #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ" target="_blank" class="share-button x-twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://rs-quiz.onrender.com" target="_blank" class="share-button facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://line.me/R/msg/text/?Mazda Roadsterクイズに挑戦しよう! #MX-5 #ロードスター #Roadsterクイズ #ロードスタークイズ%0Ahttps://rs-quiz.onrender.com" target="_blank" class="share-button line">
+                    <i class="fab fa-line"></i>
+                </a>
             </div>
         </div>
 
@@ -78,9 +77,9 @@
 
         <!-- 結果セクション -->
         <div id="result-section" class="section hidden">
-            <h2>クイズ終了！</h2>
-            <p>あなたのスコアは <span id="final-score">0</span>点でした！</p>
-            <!-- SNSシェアボタン（結果ページ） -->
+            <h2>クイズ終了!</h2>
+            <p>あなたのスコアは <span id="final-score">0</span>点でした!</p>
+            <!-- SNSシェアボタン(結果ページ) -->
             <div class="share-buttons result-share">
                 <p class="share-text">結果をシェアする</p><br/>
                 <a href="#" class="share-button x-twitter" id="twitter-share-result">
