@@ -8,6 +8,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- トップページ -->
+  <url>
+    <loc>https://carquiz.d2digital.net/index.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
   <!-- クイズページ（例：index.html） -->
   <url>
     <loc>https://carquiz.d2digital.net/mazda/rs/index.html</loc>
