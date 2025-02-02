@@ -30,6 +30,41 @@ body {
     min-height: 100vh;
 }
 
+/* ------------- ヘッダー画像 ------------- */
+.header-image {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .header-image {
+        width: 100%;
+    }
+}
+
+/* ------------- ロゴ ------------- */
+.site-logo {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.site-logo img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 600px) {
+    .site-logo {
+        max-width: 150px;
+        margin: 1rem auto;
+    }
+}
+
 @media (max-width: 600px) {
     body {
         background-size: cover;
@@ -373,7 +408,7 @@ body {
 .product-item {
     display: flex;
     align-items: center;
-    gap: 1rem; /* 画像と情報の間のスペース */
+    gap: 1rem;
     padding: 1rem;
     background: #fafafa;
     border-radius: 8px;
@@ -382,12 +417,12 @@ body {
 }
 
 .product-image {
-    max-width: 100px; /* 画像の最大幅を設定 */
-    height: auto; /* 高さは自動調整 */
+    max-width: 100px;
+    height: auto;
 }
 
 .product-info {
-    flex: 1; /* 情報部分が残りのスペースを占める */
+    flex: 1;
 }
 
 .product-name {
