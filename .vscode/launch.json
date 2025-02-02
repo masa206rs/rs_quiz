@@ -6,9 +6,10 @@
     "configurations": [
         {
             "type": "chrome",
-            "request": "launch",
+            "request": "attach",
             "name": "localhost に対して Chrome を起動する",
-            "url": "http://localhost:8080",
+            "port": 9222,
+            "url": "http://localhost:8000",
             "webRoot": "${workspaceFolder}"
         }
     ]

@@ -1,3 +1,4 @@
+/* ------------- リセット・基本設定 ------------- */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +21,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #f5f5f5;
+    background-color: var(--background-color);
     background-image: url('../img/bg1.png');
     background-size: contain;
     background-position: center;
@@ -41,27 +42,6 @@ body {
     padding: 0 1rem;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: bold;
-}
-
-h2 {
-    color: var(--secondary-color);
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-}
-
-@media (max-width: 600px) {
-    h2 {
-        font-size: 1rem;
-    }
-}
-
 .section {
     background: rgba(255, 255, 255, 0.95);
     padding: 2rem;
@@ -75,47 +55,7 @@ h2 {
     display: none;
 }
 
-/* ボタンセンタリング */
-.button-center {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.button-center .action-button {
-    display: inline-block;
-    min-width: 200px;
-}
-
-.action-button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    outline: none;
-    position: relative;
-    overflow: hidden;
-}
-
-.action-button:hover {
-    background-color: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 2px 8px var(--shadow-color);
-}
-
-.action-button:active {
-    transform: translateY(0);
-    box-shadow: none;
-}
-
-.action-button:focus {
-    box-shadow: 0 0 0 3px var(--focus-shadow);
-}
-
-/* クイズセクション */
+/* ------------- クイズセクション ------------- */
 #choices-container {
     display: grid;
     gap: 1rem;
@@ -142,13 +82,6 @@ h2 {
     }
 }
 
-/* 選択肢のマウスホバーをやめる
-.choice-btn:hover:not(:disabled) {
-    background-color: var(--primary-color);
-    color: white;
-}
-*/
-
 .choice-btn.correct {
     background-color: var(--success-color);
     border-color: var(--success-color);
@@ -173,7 +106,6 @@ h2 {
     font-weight: bold;
 }
 
-/* 正誤表示 */
 #judgment {
     text-align: center;
     font-size: 3rem;
@@ -190,7 +122,6 @@ h2 {
     color: #e74c3c;
 }
 
-/* 正誤表示のアニメーション */
 @keyframes pop {
     0% { transform: scale(0.8); opacity: 0; }
     50% { transform: scale(1.2); }
@@ -202,7 +133,6 @@ h2 {
     animation: pop 0.3s ease-out forwards;
 }
 
-/* タイマー */
 #timer-container {
     width: 100%;
     background-color: #f0f0f0;
@@ -220,7 +150,7 @@ h2 {
     box-shadow: 0 1px 2px var(--shadow-color);
 }
 
-/* サイト説明 */
+/* ------------- サイト説明・SNS・アフィリエイト ------------- */
 .description {
     text-align: center;
 }
@@ -258,42 +188,6 @@ h2 {
     margin-bottom: 0;
 }
 
-/* 情報源リンク */
-.description p a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    padding-bottom: 2px;
-    border-bottom: 1px solid transparent;
-}
-
-.description p a:hover {
-    color: var(--primary-dark);
-    border-bottom-color: var(--primary-dark);
-}
-
-/* アクセスカウンター */
-.counter {
-    text-align: center;
-}
-
-.counter-text {
-    font-size: 1.1rem;
-    color: var(--secondary-color);
-    margin-bottom: 0.0rem;
-}
-
-#access-counter {
-    padding: 0.0rem;
-    display: inline-block;
-    margin-top: 0.1rem; /* この余白を削減または削除 */
-}
-
-.counter-placeholder {
-    letter-spacing: 2px;
-}
-
-/* SNSシェアボタン */
 .share-buttons {
     margin-top: 2rem;
     display: flex;
@@ -342,7 +236,7 @@ h2 {
     border-top: 1px solid var(--border-color);
 }
 
-/* 情報源ページのスタイル */
+/* ------------- 情報源・商品一覧 ------------- */
 .references-title {
     color: var(--primary-color);
     text-align: center;
@@ -355,27 +249,40 @@ h2 {
 .references-list {
     max-width: 600px;
     margin: 2rem auto;
-    padding: 0 2rem;
+    padding: 0 2rem 0 3rem;
+    list-style: disc;
+}
+
+.references-list .product-item {
     list-style: none;
+    margin-left: -1rem;
 }
 
 .references-list li {
     margin: 1.5rem 0;
+}
+
+.references-list li.product-item {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     box-shadow: 0 2px 4px var(--shadow-color);
-    transition: transform 0.3s ease;
 }
 
-.references-list li:hover {
-    transform: translateY(-2px);
+.other-sources li {
+    margin: 0.25rem 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .references-list a {
     color: var(--primary-color);
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     font-size: 1.1rem;
 }
 
@@ -399,16 +306,16 @@ h2 {
     color: var(--primary-dark);
 }
 
-/* アフィリエイト */
+/* ------------- アフィリエイト ------------- */
 .affiliate-section {
     margin: 2rem 0;
     padding-top: 1.5rem;
     border-top: 1px solid var(--border-color);
+    text-align: center;
 }
 
 .affiliate-section h2 {
     color: var(--primary-color);
-    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -427,16 +334,146 @@ h2 {
     box-shadow: 0 2px 4px var(--shadow-color);
 }
 
+/* ------------- ボタン ------------- */
+.button-center {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.action-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.action-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.action-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.action-button:focus {
+    box-shadow: 0 0 0 3px var(--focus-shadow);
+}
+
+/* ------------- 商品一覧(references.html専用) ------------- */
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 画像と情報の間のスペース */
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    margin-bottom: 1rem;
+}
+
+.product-image {
+    max-width: 100px; /* 画像の最大幅を設定 */
+    height: auto; /* 高さは自動調整 */
+}
+
+.product-info {
+    flex: 1; /* 情報部分が残りのスペースを占める */
+}
+
+.product-name {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #555;
+}
+
+.other-sources {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.other-sources li {
+    margin: 0.5rem 0;
+}
+
+.other-sources a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.other-sources a:hover {
+    text-decoration: underline;
+}
+
+/* ------------- アクセスカウンター ------------- */
+.counter {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.counter-text {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+#access-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------- 情報源リンク ------------- */
+.references-link {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.references-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.references-link a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* ------------- レスポンシブ ------------- */
 @media (max-width: 600px) {
     .container {
         margin: 1rem auto;
     }
-
     h1 {
         font-size: 2rem;
     }
-
     .section {
         padding: 1.5rem;
+    }
+    .choice-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    .affiliate-section h2 {
+        font-size: 1.2rem;
     }
 }

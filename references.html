@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>情報源一覧</title>
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>情報源一覧</title>
+  <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="section">
-            <h1 class="references-title">問題作成の参考にした情報源</h1>
-            <ul class="references-list">
-                <li><a href="https://example.com/source1">情報源1</a></li>
-                <li><a href="https://example.com/source2">情報源2</a></li>
-                <li><a href="https://example.com/source3">情報源3</a></li>
+  <div class="container">
+    <div class="section">
+      <h1 class="references-title">問題作成の参考にした情報源</h1>
+      <ul class="references-list">
+        <!-- 商品は、画像とその右側に商品名・説明を表示するためにFlexboxでレイアウト -->
+          <!-- マツダNDロードスター―開発責任者の記録 -->
+          <li class="product-item">
+          <a href="https://amzn.to/3Ehwum6">
+            <img src="https://m.media-amazon.com/images/I/71t+RagiWzL._SY522_.jpg" alt="マツダNDロードスター―開発責任者の記録の画像" class="product-image">
+            <div class="product-info">
+              <h4 class="product-name">マツダNDロードスター―開発責任者の記録</h4>
+              <p class="product-description">NDの初代開発主査の山本さんによる書き下ろし。開発の裏側を知ることができて面白い。</p>
+            </div>
+          </a>
+        </li>
+          <!-- マツダロードスターの30年 -->
+          <li class="product-item">
+            <a href="https://amzn.to/3WLvbSP">
+              <img src="https://m.media-amazon.com/images/I/81GIeDpbL4L._SY466_.jpg" alt="マツダロードスターの30年の画像" class="product-image">
+              <div class="product-info">
+                <h4 class="product-name">マツダロードスターの30年</h4>
+                <p class="product-description">NAからNDまで４世代のロードスターの歴史を凝縮した一冊</p>
+              </div>
+            </a>
+          </li>
+          <!-- マツダ/ユーノスロードスター:日本製ライトウェイトスポーツカーの開発物語 -->
+          <li class="product-item">
+            <a href="https://amzn.to/4hEjju6">
+              <img src="https://m.media-amazon.com/images/I/41XD8MZBX4L._SY425_.jpg" alt="マツダ/ユーノスロードスター: 日本製ライトウェイトスポーツカーの開発物語の画像" class="product-image">
+              <div class="product-info">
+                <h4 class="product-name">マツダ/ユーノスロードスター:日本製ライトウェイトスポーツカーの開発物語</h4>
+                <p class="product-description">初代ロードスターを開発の記録であり、まさにロードスターの誕生秘話を書き記した一冊。</p>
+              </div>
+            </a>
+          </li>
+          <!-- ロードスターメンテナンスブック: 1989~1997 -->
+          <li class="product-item">
+            <a href="https://amzn.to/3WEDL64">
+              <img src="https://m.media-amazon.com/images/I/81-rz6G6D9L._SY466_.jpg" alt="ロードスターメンテナンスブック: 1989~1997の画像" class="product-image">
+              <div class="product-info">
+                <h4 class="product-name">ロードスターメンテナンスブック: 1989~1997</h4>
+                <p class="product-description">NAの各種パーツの交換手順を掲載。ほぼ全ての手順が写真付きなのがありがたい。白黒写真なのが惜しい。</p>
+              </div>
+            </a>
+          </li>
+
+        <!-- その他の情報源 -->
+        <li class="product-item">
+          <div class="product-info">
+            <h4 class="product-name">その他の情報源</h4>
+            <ul class="other-sources">
+              <li><a href="https://www.mazda.com/ja/about/history/greatcar/roadster/01/">ロードスター開発物語 (Mazda)</a></li>
+              <li><a href="https://www2.mazda.com/ja/stories/history/roadster/chronology/">ロードスター年表 (Mazda)</a></li>
+              <li><a href="https://www.mazda.co.jp/carlife/classicmazda/story/6/">初代NAロードスターのカタログに秘められたストーリー (Mazda)</a></li>
+              <li><a href="https://www2.mazda.com/ja/stories/history/roadster/roadster_90m/#interview">山本主査インタビュー (Mazda)</a></li>
+              <li><a href="https://www.mazda.co.jp/globalassets/assets/carlife/manual/common/onlinemanual/roadster_201711.pdf">ND オーナーズマニュアル (Mazda)</a></li>
+              <li><a href="https://www.mazda.co.jp/globalassets/assets/carlife/manual/common/onlinemanual/roadster_201206.pdf">NC オーナーズマニュアル (Mazda)</a></li>
+              <li><a href="https://www.mazdausa.com/discover/origin-story-of-mazda-mx-5-miata">THE ORIGIN OF THE MAZDA ROADSTER (Mazda USA)</a></li>
+              <li><a href="https://www.mazdausa.com/discover/mazda-mx-5-miata-fans">SEE HOW LIFE IS MORE FUN WITH AN MX-5 MIATA (Mazda USA)</a></li>
+              <li><a href="https://www.mazdausa.com/discover/explore-the-mx-5-miata-anniversary">CELEBRATE THE MX-5 MIATA'S 30TH ANNIVERSARY (Mazda USA)</a></li>
+              <li><a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%83%80%E3%83%BB%E3%83%AD%E3%83%BC%E3%83%89%E3%82%B9%E3%82%BF%E3%83%BC">マツダ・ロードスター (Wikipedia)</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Mazda_MX-5">Mazda MX-5 (Wikipedia)</a></li>
             </ul>
-            <div class="affiliate-section">
-                <h2>おすすめの書籍・商品</h2>
-                <div class="affiliate-items">
-                    <!-- バリューコマース アフィリエイト -->
-                    <div class="affiliate-item">
-                        <div style="text-align:center;">
-                            <!-- アフィリエイトコードをここに配置 -->
-                            <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3738341&pid=891322193&vc_url=https%3A%2F%2Fhidya.jp%2Fblog%2Fcar%2Fjapanese-car%2Fmazda%2Fmazda-r%2F%25e3%2583%25ad%25e3%2583%25bc%25e3%2583%2589%25e3%2582%25b9%25e3%2582%25bf%25e3%2583%25bc%2F" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3738341&pid=891322193" height="1" width="0" border="0">NA/NB/NCの古いライトは明るいHIDに交換！</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="back-link">
+        <a href="index.html">← トップページに戻る</a>
+      </div>
+　    <div class="affiliate-section">
+        <h2>ロードスター商品</h2>
+        <div class="affiliate-items">
+          <div class="affiliate-item">
+            <div style="text-align:center;">
+              <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3738341&amp;pid=891322193&amp;vc_url=https%3A%2F%2Fhidya.jp%2Fblog%2Fcar%2Fjapanese-car%2Fmazda%2Fmazda-r%2F%25e3%2583%25ad%25e3%2583%25bc%25e3%2583%2589%25e3%2582%25b9%25e3%2582%25bf%25e3%2583%25bc%2F" rel="nofollow">
+                <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3738341&amp;pid=891322193" height="1" width="0" border="0">
+                NA/NB/NCの古いライトは明るいHIDに交換！
+              </a>
             </div>
-            <div class="back-link">
-                <a href="index.html">
-                    ← トップページに戻る
-                </a>
-            </div>
+          </div>
         </div>
     </div>
+    </div>
+  </div>
 </body>
 </html>
