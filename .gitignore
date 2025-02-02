@@ -1,5 +1,5 @@
 .DS_Store
 server.py
 README.md
-.vscode
+.vscode/
 launch.json
