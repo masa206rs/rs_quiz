@@ -16,7 +16,7 @@ export const questions =
       "V705",
       "NE"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "初代ロードスターの開発コードは「P729」でした。J58Gは量産開発コードです。",
     "explanationEn": "The development code for the first-generation Roadster was \"P729,\" while \"J58G\" served as the mass production code.",
     "category": "NA"
@@ -1072,7 +1072,7 @@ export const questions =
     "category": "NA"
   },
   {
-    "question": "初代ロードスター (NA) の開発において、市場投入までの期間は？",
+    "question": "初代ロードスター (NA) の開発において、量産モデル決定後市場投入までの期間は？",
     "questionEn": "What was the period from development to market launch for the first-generation Roadster (NA)?",
     "difficulty": "一般",
     "options": [
@@ -2080,7 +2080,7 @@ export const questions =
     "category": "NC"
   },
   {
-    "question": "4代目ロードスター（ND系）の開発主査は誰？",
+    "question": "4代目ロードスター（ND系）の2代目の開発主査は誰？",
     "questionEn": "Who was the chief engineer for the development of the fourth generation Roadster (ND series)?",
     "difficulty": "一般",
     "options": [
@@ -2095,9 +2095,9 @@ export const questions =
       "Toshihiko Hirai",
       "Masa Nakayama"
     ],
-    "correct": 1,
-    "explanation": "4代目ロードスターの開発主査は山本修弘です 。",
-    "explanationEn": "The chief engineer for the development of the fourth generation Roadster was Nobuhiro Yamamoto .",
+    "correct": 3,
+    "explanation": "4代目ロードスターの2代目の開発主査は中山雅です 。",
+    "explanationEn": "The chief engineer for the development of the fourth generation Roadster was Masashi Nakayama.",
     "category": "ND"
   },
   {
@@ -4384,7 +4384,7 @@ export const questions =
       "1,998cc",
       "2,198cc"
     ],
-    "correct": 8,
+    "correct": 2,
     "explanation": "排気量は1,998cc",
     "explanationEn": "The engine displacement is 1,798cc",
     "category": "NC"
